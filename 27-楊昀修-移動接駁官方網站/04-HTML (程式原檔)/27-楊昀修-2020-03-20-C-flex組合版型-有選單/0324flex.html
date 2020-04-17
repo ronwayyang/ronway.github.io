@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            width: 100%;
+        }
+
+        .Navbar {
+            width: 100%;
+            height: 90px;
+            background-color: brown;
+            font-size: 20px;
+            color: cornflowerblue;
+            display: flex;
+            /* justify-content
+                主軸的對齊方式，共有 6 種選項
+                flex-start 靠左
+                flex-end   靠右
+                center
+                space-between 平均分散左右
+                space-around  平均等距2邊
+                space-evenly  平均等距集中
+                space-between vs space-around vs space-evenly
+                space-between：每個小方塊擁有相同的間隔，但與父容器之間沒有間隔。這裡會有 10px 的空隙是因為我將每個方塊預設有 10px 的 margin 的緣故。
+                space-around：每個小方塊之間與父容器有間隔，但小方塊與父容器之間的間隔是小方塊彼此間隔的一半。
+                space-evenly：每個小方塊之間和與父容器之間擁有相同的間隔。*/
+            /* justify-content: flex-end; */
+            justify-content: space-around;
+
+        }
+
+        .logo {
+            width: 100px;
+            height: 80px;
+            background-color: darkviolet;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRCju201-gmbtmtIYhr8I7I4h4HNeZ0f8nxSKP6bw06H5s4ZX_I');
+            float: left;
+
+        }
+
+        .tagt {
+            float: right;
+            margin: 30px 15px;
+            background-color: rgb(66, 5, 5);
+        }
+
+        .banner {
+            width: 100%;
+            height: calc(100vh - 100px);
+            background: url('https://storage.googleapis.com/www-cw-com-tw/article/201909/article-5d8595b6de5ef.jpg ');
+            background-size: cover;
+            /* background: url('https://pic.pimg.tw/loloto/1545850883-2546562529.jpg');
+            background-position: 0 -150px; */
+            /* background: url('https://picsum.photos/1140/700?random=3'); */
+        }
+
+        .content {
+            background-color: rgb(7, 110, 158);
+            width: 100%;
+        }
+
+        .cont-ainer {
+            width: 100%;
+            max-width: 1140px;
+
+            background: rgba(64, 146, 223, 0.774);
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .picT01 {
+            margin: auto;
+            display: flex;
+            padding: 20px 10px;
+            background: rgb(255, 255, 255);
+            margin-bottom: 20px;
+        }
+
+        .picT01 .pic {
+            width: 68%;
+            background: url('https://res.cloudinary.com/wegowordpress/image/upload/c_crop,h_1175,w_1880,x_0,y_39/h_675,w_1080/v1554263841/travel-cover_hql5vz.jpg');
+            margin-right: 20px;
+            background-size: cover;
+        }
+
+        .picT01 .tex {
+            width: 32%;
+            padding: 20px;
+            color: rgb(36, 74, 124);
+        }
+
+        .picT01 .tex p {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            line-height: 40px;
+            font-weight: 900;
+        }
+
+        .card02 {
+            display: flex;
+            flex-wrap: wrap;
+            background: rgb(255, 255, 255);
+            padding: 10px 3px;
+            /* margin: 20px 10px; */
+
+        }
+
+        .con {
+            width: 365px;
+            height: 600px;
+            /* background: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fyahoo.ebo.tmnewa.com.tw%2Ftmnewa%2Fitem_img%2Fd29e45ea34a0893d20b47b4e231a9f39.jpeg&imgrefurl=https%3A%2F%2Fyahoo.ebo.tmnewa.com.tw%2Ftmnewa%2Fportal%2Fprod_detail%3Fuid%3D100&docid=KKPZzpPZhL3nCM&tbnid=MIHbHx4XEpXmHM%3A&vet=1&w=330&h=260&itg=1&bih=969&biw=1920&ved=2ahUKEwiz5M28_qXoAhWJwpQKHQ7vBP4QxiAoAHoECAEQFA&iact=c&ictx=1"); */
+            background-color: rgb(201, 229, 241);
+            margin: 8px 3px;
+            background-size: cover;
+            padding: 10px;
+        }
+
+        .box img {
+            width: 345px;
+            height: 345px;
+        }
+
+        .con-text {
+            padding: 15px;
+            color: rgb(3, 35, 71);
+            line-height: 28px;
+        }
+
+        .texP05 {
+            margin: auto;
+            display: flex;
+            padding: 50px;
+            margin-bottom: 30px;
+            background-color: rgb(5, 81, 131);
+        }
+
+        .texP05 .tex {
+            width: 50%;
+            height: 600px;
+            background-color: rgb(255, 255, 255);
+            margin-right: 20px;
+            padding: 40px;
+            color: rgb(22, 60, 82);
+
+        }
+
+        .texP05 .tex p {
+            margin: 10px;
+            padding: 10px;
+            color: rgb(40, 146, 207);
+        }
+
+        .texP05 .pic {
+            width: 50%;
+            background: url('./img/2合作.jpg');
+            background-size: cover;
+        }
+
+        /* .texP05 .pic {
+            width: 50%;
+            background: url('./img/合作.jpg');            
+            background-size: 100% 120% ;
+            background-position: 0px -2px; 
+
+        }*/
+
+        .footer {
+            width: 100%;
+            height: 380px;
+            background-color: rgb(5, 59, 85);
+            font-size: 14px;
+            text-align: center;
+            line-height: 100px;
+            color: darkgray;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="Navbar">
+            <div class="logo">Logo</div>
+
+            <div class="tag">
+                <div class="tagt">服務項目</div>
+                <div class="tagt">合作洽詢</div>
+                <div class="tagt">最新消息</div>
+                <div class="tagt">關於我們</div>
+            </div>
+        </div>
+
+        <div class="banner"></div>
+
+        <div class="content">
+            <div class="cont-ainer">
+                <div class="picT01">
+                    <div class="pic">
+                        <!-- <img src="https://res.cloudinary.com/wegowordpress/image/upload/c_crop,h_1175,w_1880,x_0,y_39/h_675,w_1080/v1554263841/travel-cover_hql5vz.jpg"
+                            alt=""> -->
+                    </div>
+                    <div class="tex">
+                        <h2>策略聯盟</h2>
+                        <p>運用您的資源，<br>結合我們的資源，<br>共創雙贏吧!<br></p>
+                        <p>歡迎異業合作，共同串接曝光資源。</p>
+                        <h2>豐富合作經驗<br>
+                            合作快速又順利</h2>
+                        <p>任何合作機會，歡迎來電<br>洽詢0800-000-888</p>
+                    </div>
+                </div>
+
+                <div class="card02">
+                    <div class="con">
+                        <div class="box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMnCP8ZhqVytmj8Hq1C03EXHrWBmLhm7gIO1cYNZ7k-8sd0NfR"
+                                alt="">
+                        </div>
+                        <div class="con-text">
+                            <h2>共享經濟時代來臨</h2>
+                            <p>共享經濟能降低運輸成本、活化人力與物力資源、改善環境汙染與能源消耗等問題，有您的參與，將與我們一同逐步實現運輸共享經濟的目標。</p>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <div class="box">
+                            <img src="https://cdn2.ettoday.net/images/1494/1494444.jpg" alt="">
+                        </div>
+                        <div class="con-text">
+                            <h2>不只便捷還有安全</h2>
+                            <p>我們以真誠、嚴謹的態度，為客戶提供優良的搭乘及準時接送服務；更以安全第一的服務準則，讓客戶們能夠安心平安抵達目的地。</p>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <div class="box">
+                            <img src="https://cw1.tw/CW/images/blog/C1435309810129.jpg" alt="">
+                        </div>
+                        <div class="con-text">
+                            <h2>隨時提供您預約</h2>
+                            <p>市區/郊區搭乘服務
+                                市區出差洽公，或在異地探索城市， APP預約平台一指搞定您的搭乘需求，提供您便捷的搭乘服務，讓您輕鬆抵達您的目的地。</p>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <div class="box">
+                            <img src="https://live.staticflickr.com/1831/43085296635_c9c31ac488_b.jpg" alt="">
+                        </div>
+                        <div class="con-text">
+                            <h2>專營台灣 機場接送服務</h2>
+                            <p>不論是全台灣機場接送或是各地點接送機，24小時接送服務，讓您洽公或出遊都不需要為了交通問題而煩心！</p>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <div class="box">
+                            <img src="https://m.cignacmb.com/resource/upimg/201702/2017022411574590960.jpg" alt="">
+                        </div>
+                        <div class="con-text">
+                            <h2>專營台灣 機場接送服務</h2>
+                            <p>不論是全台灣機場接送或是各地點接送機，24小時接送服務，讓您洽公或出遊都不需要為了交通問題而煩心！</p>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <div class="box">
+                            <img src="./img/5278367_full.jpg" alt="">
+                        </div>
+                        <div class="con-text">
+                            <h2>專營台灣 機場接送服務</h2>
+                            <p>不論是全台灣機場接送或是各地點接送機，24小時接送服務，讓您洽公或出遊都不需要為了交通問題而煩心！</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="texP05">
+                    <div class="tex">
+                        <h2>車行加盟</h2>
+                        <span>城市移動訂車平台系統開放加盟，歡迎車行同業加盟派遣</span>
+                        <h3>系統化線上管理：</h3>
+                        <span>所有訂單線上管理，由專業客服24小時服務客戶及司機。</span>
+                        <h3>超方便接單APP：</h3>
+                        透過APP即時發送車輛需求、確認訂單狀況，接單不漏拍。
+                        <h4>
+                            只要4步驟：
+                            <p> 1
+                                雙方面談/
+                                經營理念<br>
+                                2
+                                條款說明/
+                                簽定合約<br>
+                                3
+                                教育訓練<br>
+                                4
+                                試營運<br>
+                            </p>
+                            車行加盟超簡易！<br></h4>
+                        <H4>｜聯繫我們｜ 加盟專線：0800-000-888 歡迎來電</h4>
+                    </div>
+
+                    <div class="pic">
+                        <!-- <img src="./img/合作.jpg" alt=""> -->
+                    </div>
+
+                </div>
+                <div class="texP05">
+                    <div class="tex">
+                        <h2>車行加盟</h2>
+                        <span>城市移動訂車平台系統開放加盟，歡迎車行同業加盟派遣</span>
+                        <h3>系統化線上管理：</h3>
+                        <span>所有訂單線上管理，由專業客服24小時服務客戶及司機。</span>
+                        <h3>超方便接單APP：</h3>
+                        透過APP即時發送車輛需求、確認訂單狀況，接單不漏拍。
+                        <h4>
+                            只要4步驟：
+                            <p> 1
+                                雙方面談/
+                                經營理念<br>
+                                2
+                                條款說明/
+                                簽定合約<br>
+                                3
+                                教育訓練<br>
+                                4
+                                試營運<br>
+                            </p>
+                            車行加盟超簡易！<br></h4>
+                        <H4>｜聯繫我們｜ 加盟專線：0800-000-888 歡迎來電</h4>
+                    </div>
+
+                    <div class="pic">
+                        <!-- <img src="./img/合作.jpg" alt=""> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        本網頁僅供教學及練習使用，若有冒犯請洽0912-123456
+    </div>
+
+    
+    </div>
+</body>
+
+</html>
