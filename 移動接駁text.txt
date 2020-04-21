@@ -1,0 +1,55 @@
+Moving移動接駁國際租賃公司
+<img src="https://www.comealong.com.tw/archive/image/weblogo/logo-1.png" border="0" style="max-width:100%;" org="" alt="順路來國際租賃公司" title="順路來國際租賃公司">
+
+
+
+<div class="NAMbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    <img src="/img/logo_0001.jpg" width="60" height="60" class="d-inline-block align-top" alt="">
+                    能量水晶
+                </a>
+                <a class="navbar-brand" href="#">關於我們</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">水晶種類<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link text-dark " href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false ">
+                                五行顏色開運手鍊
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">五行顏色-金</a>
+                                <a class="dropdown-item" href="#">五行顏色-木</a>
+                                <a class="dropdown-item" href="#">五行顏色-水</a>
+                                <a class="dropdown-item" href="#">五行顏色-火</a>
+                                <a class="dropdown-item" href="#">五行顏色-土</a>
+
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">付費方式</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">更多資訊</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+        </nav>
+    </div>
+    </div>

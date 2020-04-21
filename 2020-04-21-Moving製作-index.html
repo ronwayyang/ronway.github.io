@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--原有的 Required meta tags
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- 將CSS樣式表 <link> 複製-貼上到網頁中在所有其他樣式表之前的 <head> 中，以便載入 Bootstrap 的CSS。 -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- 用swiper輪播圖套件 css-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <title>Hello,Moving0416-Bootstrap</title>
+
+
+
+    <style>
+        #section1 .row {
+            background-image:url("./imgs/01banner.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #section2 .row {
+            justify-content: center;
+        }
+
+        .no-gutters {
+            margin-right: -5px;
+            margin-left: -5px;
+        }
+
+        .no-gutters>.col,
+        .no-gutters>[class*=col-] {
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+
+
+
+        #toggle {
+            width: 28px;
+            height: 30px;
+            margin: 10px auto;
+        }
+
+        @media (min-width: 992px) {
+            #toggle {
+                display: none;
+            }
+        }
+
+        #toggle div {
+            width: 100%;
+            height: 5px;
+            background: black;
+            margin: 4px auto;
+            transition: all 0.3s;
+            backface-visibility: hidden;
+        }
+
+        #toggle.on .one {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        #toggle.on .two {
+            opacity: 0;
+        }
+
+        #toggle.on .three {
+            transform: rotate(-45deg) translate(7px, -8px);
+        }
+
+        .bg-my-color {
+            background-color: #34ebe1 !important;
+        }
+
+        .parallax {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2018/11/18/99/5550381.jpg&s=Y&x=0&y=0&sw=1200&sh=750&sl=W&fw=1050');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .parallax-1 {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://www.omaker.com.tw/wp-content/uploads/2019/01/German-Car-Guide-Gear-Patrol-LEad-1440-1024x462.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            /* background-color: rgba(red, green, blue, alpha); */
+            background-color: rgba(0, 0, 0, .6);
+            /* 遮罩透明度 */
+        }
+
+        .cards {
+            width: 100%;
+            /* height: 100vh; */
+        }
+
+        /* .card img{
+            width: 100%;
+            height: 80%;
+        } */
+
+        .imgText {
+            width: 100%;
+            background-color: royalblue;
+        }
+
+        .tex {
+            /* width: 50%; */
+            /* height: 600px; */
+            background-color: rgb(255, 255, 255);
+            margin-right: 20px;
+            padding: 40px;
+            color: rgb(22, 60, 82);
+        }
+
+        .tex p {
+            margin: 10px;
+            padding: 10px;
+            color: rgb(40, 146, 207);
+        }
+
+        .footer {
+            width: 100%;
+            height: 353px;
+            background-color: rgb(5, 59, 85);
+            font-size: 12px;
+            /* text-align: center; */
+            line-height: 25px;
+            color: rgb(187, 177, 177);
+            padding: 40px 0;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer ul.F-menu {
+            margin: 0 auto;
+            /* background-color: rgba(187, 143, 143, 0.267); */
+            width: 80%;
+            padding: 10px 15px;
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        .footer a:visited {
+            color: rgb(101, 119, 179);
+        }
+
+        .footer .F-menu {
+            display: flex;
+            font-size: 10px;
+        }
+
+        .footer li {
+            margin-right: 28px;
+        }
+
+        .footer li a {
+            padding: 0px 10px;
+            background-color: rgba(15, 25, 46, 0.164);
+            /* display: block; */
+        }
+
+        /* .footer.F-menu ul {
+            display: none;
+        } */
+
+        /* .F-menu>li {
+            position: relative;
+        } */
+
+        .F-menu>li ul li {
+            padding: 1px 0;
+            /* 選項裡 間距值 */
+        }
+
+        /* .F-menu>li:hover ul {
+            display: block;
+        } */
+        .copy {
+            width: 50%;
+            margin: 0;
+            background-color: rgb(60, 60, 88);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 導覽列nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-my-color">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- Moving -->
+                <img src="./imgs/1-1logo.png" alt="Moving移動接駁國際租賃公司 logo">
+            </a>
+            <div id="toggle" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <div class="one">1</div>
+                <div class="two">2</div>
+                <div class="three">3</div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- HOME
+                         <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li> -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME Moving<span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- 選單
+                        <li class="nav-item"><a class="nav-link" href="#">Link</a>
+                    </li> -->
+                    <li class="nav-item"><a class="nav-link" href="#">立即預約</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">包車旅遊</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">機場接送</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">車種介紹</a>
+                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">計費方式</a>
+                    </li> -->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">最新消息</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">商務合作</a>
+                    </li>
+                    <!-- Dropdown         -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">+More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">聯絡我們</a>
+                            <a class="dropdown-item" href="#">關於我們</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------------------------------------------------- 第1 資訊區   -->
+    <section id="section1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="bennerTOP">
+                        <img src="./imgs/01banner.png" alt="移動接駁首頁banner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第  2  資訊區   -->
+    <section id="section2">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-sm-3">
+                    <div class="card">
+                        One of three columns
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" data-toggle="modal" data-target="#exampleModal">
+                        One of three columns
+                    </div>
+                </div>
+                <!-- 自動內容撐大 -->
+                <div class="col-sm-auto">
+                    <div class="card">
+                        <div data-toggle="collapse" data-target="#collapseExample">
+                            Hello,Moving
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--摺疊 抽屜 -->
+    <section>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                    aria-controls="pills-home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                    aria-controls="pills-contact" aria-selected="false">Contact</a>
+            </li>
+        </ul>
+
+        <!-- 摺疊使用 套件輪播圖 第一個成功 -->
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- <div class="swiper-slide">Slide 1</div> -->
+                        <div class="swiper-slide"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRCju201-gmbtmtIYhr8I7I4h4HNeZ0f8nxSKP6bw06H5s4ZX_I"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://res.cloudinary.com/wegowordpress/image/upload/c_crop,h_1175,w_1880,x_0,y_39/h_675,w_1080/v1554263841/travel-cover_hql5vz.jpg"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="https://pic.pimg.tw/loloto/1545850883-2546562529.jpg"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/1140/700?random=3" alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://storage.googleapis.com/www-cw-com-tw/article/201909/article-5d8595b6de5ef.jpg"
+                                alt=""></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <!-- 摺疊使用 套件輪播圖 第2個加入 搜尋 初始化修改  -->
+                <div class="swiper-container">
+                    <!-- 起    -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMnCP8ZhqVytmj8Hq1C03EXHrWBmLhm7gIO1cYNZ7k-8sd0NfR"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://res.cloudinary.com/wegowordpress/image/upload/c_crop,h_1175,w_1880,x_0,y_39/h_675,w_1080/v1554263841/travel-cover_hql5vz.jpg"
+                                alt=""></div>
+                        <div class="swiper-slide"> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMnCP8ZhqVytmj8Hq1C03EXHrWBmLhm7gIO1cYNZ7k-8sd0NfR"
+                                alt=""></div>
+                        <div class="swiper-slide"> <img src="https://cdn2.ettoday.net/images/1494/1494444.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"> <img src="https://cw1.tw/CW/images/blog/C1435309810129.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"> <img
+                                src="https://live.staticflickr.com/1831/43085296635_c9c31ac488_b.jpg" alt=""></div>
+                        <div class="swiper-slide"> <img
+                                src="https://m.cignacmb.com/resource/upimg/201702/2017022411574590960.jpg" alt=""></div>
+                        <!-- <div class="swiper-slide">  <img src="./img/5278367_full.jpg" alt=""></div> -->
+                        <!-- <div class="swiper-slide">Slide 10</div> -->
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- 末 -->
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                Hello,Moving
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 互動視窗 Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Hello, parallax 範例 02</h1>
+    <section id="parallax" div class="parallax">
+        <div class="mask d-none d-lg-block">
+            <!-- 遮罩顯示 與尺寸變化隱藏 -->
+            <div class="container h-100">
+                <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                    <h1 class="bg-primary text-white d-inline p-3">Hello,Moving</h1>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <h1>Hello, 卡片 範例 03</h1>
+
+    <!-- 元件  卡片 -->
+    <section id="cards-group" div class="cards d-flex align-items-center">
+        <!-- 畫面置中分3塊，手機版本要是 字上圖下 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <!-- 01 電腦版991px 以上lg時的版面 -->
+                    <div class="card w-100">
+                        <!-- style="width: 18rem  內容字寬 -->
+                        <img src="https://www.omaker.com.tw/wp-content/uploads/2019/01/German-Car-Guide-Gear-Patrol-LEad-1440-1024x462.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">共享經濟時代來臨</h5>
+                            <p class="card-text">
+                                共享經濟能降低運輸成本、活化人力與物力資源、改善環境汙染與能源消耗等問題，有您的參與，將與我們一同逐步實現運輸共享經濟的目標。</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <!-- 02 -->
+                    <div class="card w-100">
+                        <img src="https://compathy-magazine-assets.compathy.net/uploads/2019/08/f5f810e9b0aa63dde7732d23a5a6e617_s-640x480.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">不只便捷還有安全</h5>
+                            <p class="card-text">我們以真誠、嚴謹的態度，為客戶提供優良的搭乘及準時接送服務；更以安全第一的服務準則，讓客戶們能夠安心平安抵達目的地。</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <!-- 03 -->
+                    <div class="card w-100">
+                        <img src="https://www.brandinlabs.com/wp-content/uploads/2019/03/%E8%B5%B7%E4%BA%9E%E6%B1%BD%E8%BB%8A%E5%85%A8%E6%96%B0LOGO%E6%9B%9D%E5%85%89%EF%BC%8C%E5%A6%82%E6%9E%9C%E5%85%A8%E9%9D%A2%E6%9B%B4%E6%8F%9B%E4%BD%A0%E6%9C%83%E5%96%9C%E6%AD%A1%E5%97%8E%EF%BC%9F.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <h1>Hello, 換圖片 範例 01</h1>
+    <section id="imgT">
+        <div class="container">
+            <!-- Content here -->
+            <div class="row">
+                <div class=" col-lg col-lg-6 order-1 order-1g-0">
+                    <!-- 電腦版991px 以上lg時的版面 左圖右文 圖可換圖 由小寫大-->
+                    <!-- <picture> -->
+                    <img class="abc w-100" src="https://img3.secretchina.com/pic/2019/12-27/p2590882a501012458-ss.jpg"
+                        class="card-img-top" alt="...">
+                    <!-- </picture> -->
+                </div>
+
+                <!-- 右文字區 -->
+                <div class="col-12 col-lg-6">
+                    <div class="tex">
+                        <h2>車行加盟</h2>
+                        <span>城市移動訂車平台系統開放加盟，歡迎車行同業加盟派遣</span>
+                        <h3>系統化線上管理：</h3>
+                        <span>所有訂單線上管理，由專業客服24小時服務客戶及司機。</span>
+                        <h3>超方便接單APP：</h3>
+                        透過APP即時發送車輛需求、確認訂單狀況，接單不漏拍。
+                        <h4>
+                            只要4步驟：
+                            <p> 1
+                                雙方面談/
+                                經營理念<br>
+                                2
+                                條款說明/
+                                簽定合約<br>
+                                3
+                                教育訓練<br>
+                                4
+                                試營運<br>
+                            </p>
+                            車行加盟超簡易！<br></h4>
+                        <H4>｜聯繫我們｜ 加盟專線：0800-000-888 歡迎來電</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="parallax-1" class="parallax-1">
+        <div class="mask d-none d-lg-block">
+            <!-- 遮罩顯示 與尺寸變化隱藏 -->
+            <div class="container h-100">
+                <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                    <h1 class="bg-primary text-white d-inline p-3">移動接駁-標題</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="imgT-1">
+        <div class="container">
+            <!-- Content here -->
+            <div class="row">
+                <div class=" col-lg col-lg-6 ">
+                    <!-- 電腦版991px 以上lg時的版面 左圖右文 圖可換圖 由小寫大-->
+                    <!-- <picture> -->
+                    <img class="abc w-100" src="https://img3.secretchina.com/pic/2019/12-27/p2590882a501012458-ss.jpg"
+                        class="card-img-top" alt="...">
+                    <!-- </picture> -->
+                </div>
+
+                <!-- 右文字區 -->
+                <div class="col-12 col-lg-6 order-1 order-1g-0">
+                    <div class="tex">
+                        <h2>策略聯盟</h2>
+                        <p>運用您的資源，<br>結合我們的資源，<br>共創雙贏吧!<br></p>
+                        <p>歡迎異業合作，共同串接曝光資源。</p>
+                        <h2>豐富合作經驗<br>
+                            合作快速又順利</h2>
+                        <p>任何合作機會，歡迎來電<br>洽詢0800-000-888</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--資訊區   -->
+    <section id="...">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-sm-3">
+                    <div class="card">
+                        One of three columns
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" data-toggle="modal" data-target="#exampleModal">
+                        One of three columns
+                    </div>
+                </div>
+                <!-- 自動內容撐大 -->
+                <div class="col-sm-auto">
+                    <div class="card">
+                        <div data-toggle="collapse" data-target="#collapseExample">
+                            Hello,Moving
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--資訊區   -->
+    <section id="footer" class="container-fluid">
+        <div class="footer">
+            <ul class="F-menu">
+                <li><span class="mainFooter">會員中心</span>
+                    <ul>
+                        <li><a href="">會員登入</a></li>
+                        <li><a href="">會員註冊</a></li>
+                        <li><a href="">忘記密碼</a></li>
+                    </ul>
+                </li>
+                <li><span class="mainFooter">關於我們</span>
+                    <ul>
+                        <li><a href="">乘客須知</a></li>
+                        <li><a href="">服務條款</a></li>
+                        <li><a href="">隱私權</a></li>
+                        <li><a href="">租賃定型化契約</a></li>
+                        <li><a href="">問與答</a></li>
+                        <li><a href="">服務據點</a></li>
+                    </ul>
+                </li>
+                <li> <span class="mainFooter">預約訂車</span>
+                    <ul>
+                        <li><a href="">預約流程</a></li>
+                        <li><a href="">計費方式</a></li>
+                        <li><a href="">訂單查詢</a></li>
+                        <li><a href="">租賃定型化契約</a></li>
+                        <li><a href="">發票查詢</a></li>
+                        <li><a href="">車輛定位</a></li>
+                    </ul>
+                </li>
+
+                <ul class="contactList">
+                    <span class="mainFooter">與我們聯絡</span>
+                    <li><span class="icon-airline">Line ID：<a href=" " target="_blank">@0800</a></span></li>
+                    <li><span class="icon-airwechat">Wechat ID：<a target="_blank">twairportcar</a></span></li>
+                    <li><span class="icon-mail"><a href="mailto:0800@0800.com">0800@0800.com</a></span></li>
+                    <li><span class="icon-phone">24小時客服專線：<a href="tel:08000800">0800-0800</a></span></li>
+                </ul>
+                <ul class="shareList" id="shareList">
+                    <span class="mainFooter">加入好友</span>
+                    <li><a class="icon-airline" href="https://line.me/R/ti/p/%40snd5082k " target="_blank"></a></li>
+                    <li><a class="icon-facebook" href="https://www.facebook.com/airportfrstcar/" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="icon-whatsapp" href="https://wa.me/" target="_blank">
+                            <svg class="icon-whatsapp">
+                                <use xlink:href=""></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+
+            <div class="copy">
+                版權聲明
+                ©2020 系統供應商-移動有限公司
+                ©2020 派遣服務商-移動租賃有限公司
+                本網頁僅供教學及練習使用，若有冒犯請洽0955-102703</div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- 用swiper輪播圖套件 -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script>
+
+        //   用swiper輪播圖套件 輪播圖變數  始
+        var swiper = new Swiper('.swiper-container', {
+            observer: true,
+            observeParents: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        //   用swiper輪播圖套件 輪播圖變數  末
+
+        $("#toggle").click(function () {
+            $(this).toggleClass("on");
+        });
+
+        $('#collapseExample').on('show.bs.collapse', function () {
+            console.log("Test");
+        })
+
+    </script>
+</body>
+
+</html>
