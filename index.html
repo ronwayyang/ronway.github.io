@@ -23,6 +23,12 @@
 
 
     <style>
+        #section1 .row {
+            background-image:url("./imgs/01banner.png");
+            background-size: cover;
+            background-position: center;
+        }
+
         #section2 .row {
             justify-content: center;
         }
@@ -208,11 +214,14 @@
     <!-- 導覽列nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-my-color">
         <div class="container">
-            <a class="navbar-brand" href="#">Moving</a>
+            <a class="navbar-brand" href="#">
+                <!-- Moving -->
+                <img src="./imgs/1-1logo.png" alt="Moving移動接駁國際租賃公司 logo">
+            </a>
             <div id="toggle" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
+                <div class="one">1</div>
+                <div class="two">2</div>
+                <div class="three">3</div>
             </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -234,8 +243,8 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">車種介紹</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">計費方式</a>
-                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">計費方式</a>
+                    </li> -->
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">最新消息</a>
                     </li>
@@ -244,7 +253,7 @@
                     <!-- Dropdown         -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">+更多 More
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">+More
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">聯絡我們</a>
@@ -261,7 +270,19 @@
         </div>
     </nav>
 
-    <!-- 第2 資訊區   -->
+    <!-------------------------------------------------------------- 第1 資訊區   -->
+    <section id="section1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="bennerTOP">
+                        <img src="./imgs/01banner.png" alt="移動接駁首頁banner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第  2  資訊區   -->
     <section id="section2">
         <div class="container">
             <div class="row no-gutters">
@@ -310,6 +331,7 @@
                     aria-controls="pills-contact" aria-selected="false">Contact</a>
             </li>
         </ul>
+
         <!-- 摺疊使用 套件輪播圖 第一個成功 -->
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -551,8 +573,8 @@
         </div>
     </section>
 
-      <!--資訊區   -->
-      <section id="...">
+    <!--資訊區   -->
+    <section id="...">
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-sm-3">
@@ -583,66 +605,67 @@
             </div>
         </div>
     </section>
- <!--資訊區   -->
- <section id="footer" class="container-fluid">    
-    <div class="footer">
-        <ul class="F-menu">
-            <li><span class="mainFooter">會員中心</span>
-                <ul>
-                    <li><a href="">會員登入</a></li>
-                    <li><a href="">會員註冊</a></li>
-                    <li><a href="">忘記密碼</a></li>
-                </ul>
-            </li>
-            <li><span class="mainFooter">關於我們</span>
-                <ul>
-                    <li><a href="">乘客須知</a></li>
-                    <li><a href="">服務條款</a></li>
-                    <li><a href="">隱私權</a></li>
-                    <li><a href="">租賃定型化契約</a></li>
-                    <li><a href="">問與答</a></li>
-                    <li><a href="">服務據點</a></li>
-                </ul>
-            </li>
-            <li> <span class="mainFooter">預約訂車</span>
-                <ul>
-                    <li><a href="">預約流程</a></li>
-                    <li><a href="">計費方式</a></li>
-                    <li><a href="">訂單查詢</a></li>
-                    <li><a href="">租賃定型化契約</a></li>
-                    <li><a href="">發票查詢</a></li>
-                    <li><a href="">車輛定位</a></li>
-                </ul>
-            </li>
-
-            <ul class="contactList">
-                <span class="mainFooter">與我們聯絡</span>
-                <li><span class="icon-airline">Line ID：<a href=" " target="_blank">@0800</a></span></li>
-                <li><span class="icon-airwechat">Wechat ID：<a target="_blank">twairportcar</a></span></li>
-                <li><span class="icon-mail"><a href="mailto:0800@0800.com">0800@0800.com</a></span></li>
-                <li><span class="icon-phone">24小時客服專線：<a href="tel:08000800">0800-0800</a></span></li>
-            </ul>
-            <ul class="shareList" id="shareList">
-                <span class="mainFooter">加入好友</span>
-                <li><a class="icon-airline" href="https://line.me/R/ti/p/%40snd5082k " target="_blank"></a></li>
-                <li><a class="icon-facebook" href="https://www.facebook.com/airportfrstcar/" target="_blank"></a></li>
-                <li>
-                    <a class="icon-whatsapp" href="https://wa.me/" target="_blank">
-                        <svg class="icon-whatsapp">
-                            <use xlink:href=""></use>
-                        </svg>
-                    </a>
+    <!--資訊區   -->
+    <section id="footer" class="container-fluid">
+        <div class="footer">
+            <ul class="F-menu">
+                <li><span class="mainFooter">會員中心</span>
+                    <ul>
+                        <li><a href="">會員登入</a></li>
+                        <li><a href="">會員註冊</a></li>
+                        <li><a href="">忘記密碼</a></li>
+                    </ul>
                 </li>
-            </ul>
-        </ul>
+                <li><span class="mainFooter">關於我們</span>
+                    <ul>
+                        <li><a href="">乘客須知</a></li>
+                        <li><a href="">服務條款</a></li>
+                        <li><a href="">隱私權</a></li>
+                        <li><a href="">租賃定型化契約</a></li>
+                        <li><a href="">問與答</a></li>
+                        <li><a href="">服務據點</a></li>
+                    </ul>
+                </li>
+                <li> <span class="mainFooter">預約訂車</span>
+                    <ul>
+                        <li><a href="">預約流程</a></li>
+                        <li><a href="">計費方式</a></li>
+                        <li><a href="">訂單查詢</a></li>
+                        <li><a href="">租賃定型化契約</a></li>
+                        <li><a href="">發票查詢</a></li>
+                        <li><a href="">車輛定位</a></li>
+                    </ul>
+                </li>
 
-        <div class="copy">
-            版權聲明
-            ©2020 系統供應商-移動有限公司
-            ©2020 派遣服務商-移動租賃有限公司
-            本網頁僅供教學及練習使用，若有冒犯請洽0955-102703</div>
-    </div>
-</section>
+                <ul class="contactList">
+                    <span class="mainFooter">與我們聯絡</span>
+                    <li><span class="icon-airline">Line ID：<a href=" " target="_blank">@0800</a></span></li>
+                    <li><span class="icon-airwechat">Wechat ID：<a target="_blank">twairportcar</a></span></li>
+                    <li><span class="icon-mail"><a href="mailto:0800@0800.com">0800@0800.com</a></span></li>
+                    <li><span class="icon-phone">24小時客服專線：<a href="tel:08000800">0800-0800</a></span></li>
+                </ul>
+                <ul class="shareList" id="shareList">
+                    <span class="mainFooter">加入好友</span>
+                    <li><a class="icon-airline" href="https://line.me/R/ti/p/%40snd5082k " target="_blank"></a></li>
+                    <li><a class="icon-facebook" href="https://www.facebook.com/airportfrstcar/" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="icon-whatsapp" href="https://wa.me/" target="_blank">
+                            <svg class="icon-whatsapp">
+                                <use xlink:href=""></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+
+            <div class="copy">
+                版權聲明
+                ©2020 系統供應商-移動有限公司
+                ©2020 派遣服務商-移動租賃有限公司
+                本網頁僅供教學及練習使用，若有冒犯請洽0955-102703</div>
+        </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
