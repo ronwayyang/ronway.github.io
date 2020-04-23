@@ -21,34 +21,9 @@
     <title>Hello,Moving0416-Bootstrap</title>
 
 
-    <!-- :root {
-        --blue: #007bff;
-        --indigo: #6610f2;
-        --purple: #6f42c1;
-        --pink: #e83e8c;
-        --red: #dc3545;
-        --orange: #fd7e14;
-        --yellow: #ffc107;
-        --green: #28a745;
-        --teal: #20c997;
-        --cyan: #17a2b8;
-        --white: #fff;
-        --gray: #6c757d;
-        --gray-dark: #343a40;
-        --primary: #007bff;
-        --secondary: #6c757d;
-        --success: #28a745;
-        --info: #17a2b8;
-        --warning: #ffc107;
-        --danger: #dc3545;
-        --light: #f8f9fa;
-        --dark: #343a40;
-        --breakpoint-xs: 0;
-        --breakpoint-sm: 576px;
-        --breakpoint-md: 768px;
-        --breakpoint-lg: 992px;
-        --breakpoint-xl: 1200px;
-        --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" -->
+    <!-- font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" 
+    https://developer.mozilla.org/zh-CN/docs/Web/CSS/position
+    -->
     <style>
         body,
         html {
@@ -59,10 +34,19 @@
             font-family: 微軟雅黑體, 微軟正黑體, Microsoft YaHei UI, Microsoft JhengHei UI, Microsoft JhengHei, MingLiU, arial, verdana, helvetica, tahoma, Sans-serif;
         }
 
+        .navbar {
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+
+        }
+
         #section1 {
             width: 100%;
             height: 100vh;
+            /* height:calc(100vh-100px)              */
             background-image: url("./imgs/01banner.png");
+            background-color: black;
             background-size: cover;
             background-position: center;
         }
@@ -171,17 +155,17 @@
             font-size: 48px;
             font-weight: bold;
             color: #CF9C51;
-            /* padding-bottom: 40px; */
             margin-bottom: 50px;
 
         }
-        .f18c{
+
+        .f18c {
             font-size: 18px;
             font-family: Microsoft YaHei UI;
             font-family: 微軟雅黑, 微軟正黑體;
             /* font-style: initial; */
-            font-weight:initial;
-            margin-bottom: 20px;
+            font-weight: initial;
+            margin: 15.5px 20px;
         }
 
         .Line {
@@ -200,6 +184,36 @@
 
         #section2 .row {
             justify-content: center;
+        }
+
+        #section3 #Service h1.EN {
+            font-family: 微軟雅黑, 微軟正黑體;
+            text-align: center;
+            font-size: 72px;
+            font-weight: bold;
+            color: #CF9C51;
+            letter-spacing: 10px;
+            /* 設定文字間距 */
+            text-decoration: underline;
+            margin: 75px 428px 0px 817px;
+
+        }
+
+        .f48ctn {
+            font-family: 微軟雅黑, 微軟正黑體;
+            text-align: center;
+            font-weight: bold;
+            color: #CF9C51;
+            margin: 15.5px 479px 67px 861px;
+            font-size: 48px;
+            /* 設定文字大小 */
+            line-height: 48px;
+            /* 設定文字行距 */
+            /* letter-spacing: 3px; */
+            /* 設定文字間距 */
+            background-image: url(.gif);
+            /* 設定文字背景圖  */
+
         }
 
         .parallax {
@@ -333,6 +347,7 @@
 
 
     <!-- 導覽列nav -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white bg-my-color">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -348,8 +363,8 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto align-items-center">
                     <!-- HOME
-                         <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li> -->
+                     <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li> -->
                     <li class="nav-item active">
                         <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
                     </li>
@@ -363,12 +378,12 @@
                     <li class="nav-item"><a class="nav-link" href="#">車種介紹</a>
                     </li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#">計費方式</a>
-                    </li> -->
+                </li> -->
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">最新消息</a>
                     </li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#">商務合作</a>
-                    </li> -->
+                </li> -->
                     <!-- Dropdown         -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -383,8 +398,8 @@
                         </div>
                     </li>
                     <!-- <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li> -->
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
                     <li>
                         <div class="tel">
                             <img src="./imgs/1-2tel.png" alt="">
@@ -394,18 +409,29 @@
             </div>
         </div>
     </nav>
-
     <!--第1 資訊區 ------------------------------------------------------------  移動接駁首頁banner -->
     <section id="section1">
         <!-- <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <div class="bennerTOP">
-                        <img src="./imgs/01banner.png" alt="移動接駁首頁banner"></div>
-                </div>
+        <div class="row">
+            <div class="col">
+                <div class="bennerTOP">
+                    <img src="./imgs/01banner.png" width="100%" height="978px" alt="移動接駁首頁banner"></div>
             </div>
-        </div> -->
+        </div>
+    </div> -->
+    <h1>字體1</h1>
+    <h2>字體2</h2>
+    <h3>字體3</h3>
+    <h4>字體4</h4>
+    <h5>字體5</h5>
+    <h6>字體6</h6>
+
     </section>
+
+    <!-- 導覽列nav 希望第2頁才顯示 -->
+
+
+
 
     <!-- 第  2  資訊區 ------------------------------------------------------------  關於我們   -->
     <section id="section2">
@@ -440,61 +466,132 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-sm-4 p-5">
+                <div class="col-6 col-sm-4 p-1">
                     <div class="w-100 m-5">
-                    <p class="mb-2 f24c"><strong>不管是全台灣的機場接送，還是商務洽公、</strong></p>
-                    <p class="mb-5 f24c"><strong>送機、接機服務、旅遊包車，我們隨傳隨到！</strong></p>
-                    <p class="mb-3 f24c"><strong>24小時隨時待命，讓您不再為機場接送而煩惱。</strong></p>
-                    <p class="mb-0 f18c">每一趟的接送服務，我們都堅守3大原則：</p>
-                    <p class="mb-0 f18c"></p>1.嚴謹真誠                   2.安全舒適                  3.準時接送</p>
-                    <img src="./imgs/2-about.jpg" width="540px" height="400px" alt="Moving關於我們">
-                    <p class="mb-0 f18c">最安心的機場接送服務，就交給移動接駁。</p>
+                        <p class="mb-2 f24c"><strong>不管是全台灣的機場接送，還是商務洽公、</strong></p>
+                        <p class="mb-5 f24c"><strong>送機、接機服務、旅遊包車，都隨傳隨到！</strong></p>
+                        <p class="mb-3 f24c"><strong>24小時隨時待命，讓您不再為機場接送而煩惱。</strong></p>
+                        <p class="mb-0 f18c p-3">每一趟的接送服務，我們都堅守3大原則：</p>
+                        <div class="mb-5 w-100 d-flex p-3">
+                            <p class="mr-5 f18c">1.嚴謹真誠</p>
+                            <p class="mr-5 f18c">2.安全舒適</p>
+                            <p class="mr-5 f18c">3.準時接送</p>
+                        </div>
+                        <div class="w-100 d-flex p-3">
+                            <img src="./imgs/1.嚴謹真誠rigorous.png" width="100px" height="100px" alt="Moving關於我們">
 
-                </div>
+                            <img src="./imgs/2.安全舒適time.png" width="100px" height="100px" alt="Moving關於我們">
 
-            </div>
-        </div>
-        </div>
+                            <img src="./imgs/3.準時接送safe.png" width="100px" height="100px" alt="Moving關於我們">
 
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="w-100"></div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-            </div>
-        </div>
-        <!-- <div class="container"> -->
-        <div class="row no-gutters">
-            <div class="col-sm-3">
-                <div class="card">
-                    One of three columns
+
+                        </div>
+                        <p class="mb-0 f18c">最安心的機場接送服務，就交給移動接駁。</p>
+                    </div>
                 </div>
             </div>
+
+        </div>
+    </section>
+
+    <!-- 第  3  資訊區 
+        align-items-start
+                align-items-center
+                row align-items-end ------------------------------------------------------------ Service 服務項目   -->
+    <section id="section3">
+        <div class="container-fluid bg-dark ">
+            <div id="Service">               
+                <div class="row justify-content-start ">
+                    <h1 class="d-inline EN">Service</h1>
+                    <p class="f48ctn">服務項目</p>
+                </div>
+                <!-- <div id="ServicePic" class="row align-items-center"></div>
+                
+                justify-content-start
+                justify-content-center
+                justify-content-end
+                justify-content-around
+             -->
+
+                <div id="ServiceTex" class="row justify-content-center">
+                    <!-- 1自動內容撐大  -->
+                    <div class="col col-sm-auto">
+                        <div class="card">
+                            <div data-toggle="collapse" data-target="#collapseExample">
+                                <img src="./imgs/301.png" alt="">
+                                <h4 class="text-muted">商務洽公</h4>
+                            </div>
+                            <div class="collapse" id="collapseExample ">
+                                <div class="card card-body">
+                                    商務洽公、送機、接機服務、旅遊包車
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2自動內容撐大 -->
+                    <div class="col col-sm-auto">
+                        <div class="card w-190">
+                            <div data-toggle="collapse" data-target="#collapseExample">
+                                <img src="./imgs/302.png" alt="">
+                                <h4 class="text-muted"> 機場接送</h4>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    商務洽公、送機、接機服務、旅遊包車
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3自動內容撐大 -->
+                    <div class="col col-sm-auto">
+                        <div class="card">
+                            <div data-toggle="collapse" data-target="#collapseExample">
+                                <img src="./imgs/303.png" alt="">
+                                <h4 class="text-muted">順風共乘</h4>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    商務洽公、送機、接機服務、旅遊包車
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4自動內容撐大 -->
+                    <div class="col col-sm-auto">
+                        <div class="card">
+                            <div data-toggle="collapse" data-target="#collapseExample">
+                                <img src="./imgs/304.png" alt="">
+                                <h4 class="text-muted text-align">旅遊包車</h4>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    商務洽公、送機、接機服務、旅遊包車
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-3 col-sm-auto row align-items-end"">
+                <div class=" card">
+                    更多↓ LEARN MORE
+                </div>
+            </div>
+
+            <!-- 秀出小卡 
             <div class="col-sm">
                 <div class="card" data-toggle="modal" data-target="#exampleModal">
                     One of three columns
                 </div>
             </div>
-            <!-- 自動內容撐大 -->
-            <div class="col-sm-auto">
-                <div class="card">
-                    <div data-toggle="collapse" data-target="#collapseExample">
-                        Hello,Moving
-                    </div>
-                    <div class="collapse" id="collapseExample">
-                        <div class="card card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                            sapiente ea proident.
-                        </div>
-                    </div>
-                </div>
-            </div>
+             -->
         </div>
         </div>
+
+
     </section>
+
+
 
     <!--摺疊 抽屜 -->
     <section>
@@ -560,7 +657,8 @@
                         <div class="swiper-slide"> <img
                                 src="https://live.staticflickr.com/1831/43085296635_c9c31ac488_b.jpg" alt=""></div>
                         <div class="swiper-slide"> <img
-                                src="https://m.cignacmb.com/resource/upimg/201702/2017022411574590960.jpg" alt=""></div>
+                                src="https://m.cignacmb.com/resource/upimg/201702/2017022411574590960.jpg" alt="">
+                        </div>
                         <!-- <div class="swiper-slide">  <img src="./img/5278367_full.jpg" alt=""></div> -->
                         <!-- <div class="swiper-slide">Slide 10</div> -->
                     </div>
@@ -657,7 +755,8 @@
                             class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
                                 of the card's
                                 content.</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -776,7 +875,8 @@
                         </div>
                         <div class="collapse" id="collapseExample">
                             <div class="card card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                richardson ad
                                 squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
                                 sapiente ea proident.
                             </div>
@@ -809,7 +909,8 @@
                         </div>
                         <div class="collapse" id="collapseExample">
                             <div class="card card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                richardson ad
                                 squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
                                 sapiente ea proident.
                             </div>
@@ -881,7 +982,7 @@
     </section>
 
     <!-- Optional JavaScript -->
-    
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
