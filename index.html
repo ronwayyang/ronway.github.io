@@ -18,329 +18,12 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- 用swiper輪播圖套件 css-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <title>Hello,Moving0416-Bootstrap</title>
-
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello,Moving</title>
 
     <!-- font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" 
     https://developer.mozilla.org/zh-CN/docs/Web/CSS/position
     -->
-    <style>
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-            font-size: 16px;
-            line-height: 1.5em;
-            font-family: 微軟雅黑體, 微軟正黑體, Microsoft YaHei UI, Microsoft JhengHei UI, Microsoft JhengHei, MingLiU, arial, verdana, helvetica, tahoma, Sans-serif;
-        }
-
-        .navbar {
-            position: sticky;
-            top: 0px;
-            z-index: 1;
-
-        }
-
-        #section1 {
-            width: 100%;
-            height: 100vh;
-            /* height:calc(100vh-100px)              */
-            background-image: url("./imgs/01banner.png");
-            background-color: black;
-            background-size: cover;
-            background-position: center;
-        }
-
-
-        .no-gutters {
-            margin-right: -5px;
-            margin-left: -5px;
-        }
-
-        .no-gutters>.col,
-        .no-gutters>[class*=col-] {
-            padding-right: 5px;
-            padding-left: 5px;
-        }
-
-        #toggle {
-            width: 28px;
-            height: 30px;
-            margin: 10px auto;
-        }
-
-        @media (min-width: 992px) {
-            #toggle {
-                display: none;
-            }
-        }
-
-        #toggle div {
-            width: 100%;
-            height: 5px;
-            background: black;
-            margin: 4px auto;
-            transition: all 0.3s;
-            backface-visibility: hidden;
-        }
-
-        #toggle.on .one {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-
-        #toggle.on .two {
-            opacity: 0;
-        }
-
-        #toggle.on .three {
-            transform: rotate(-45deg) translate(7px, -8px);
-        }
-
-        .bg-my-color {
-            /* background-color: #947B27 !important; */
-            background-color: black !important;
-        }
-
-        a.nav-link {
-            /* color: #947B27 !important; */
-            color: #CF9C51 !important;
-        }
-
-        a.nav-link:hover {
-            color: rgb(255, 255, 255) !important;
-            /* color: #CF9C51; */
-            font-size: 19px;
-        }
-
-        /* About Moving */
-        #abut {
-            background-color: rgb(243, 218, 183);
-        }
-
-        #abutT h1 {
-            color: #CF9C51;
-            /* margin: 120px; */
-            font-size: 68px;
-            font-family: Microsoft YaHei UI, 微軟雅黑;
-            font-weight: bold;
-            padding: 50px 10px 10px 50px;
-        }
-
-        /* 關於我們 */
-        #abutC {
-            font-family: Microsoft YaHei UI;
-            font-family: 微軟雅黑, 微軟正黑體;
-            /* font-style: initial; */
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        #abutC h1 {
-            margin-bottom: 50px;
-            color: #CF9C51;
-        }
-
-
-        .f24c {
-            font-family: 微軟雅黑, 微軟正黑體;
-            text-align: left;
-            font-size: 24px;
-            /* font-weight: bold; */
-            margin-bottom: 20px;
-        }
-
-        .f48c {
-            font-family: 微軟雅黑, 微軟正黑體;
-            text-align: left;
-            font-size: 48px;
-            font-weight: bold;
-            color: #CF9C51;
-            margin-bottom: 50px;
-
-        }
-
-        .f18c {
-            font-size: 18px;
-            font-family: Microsoft YaHei UI;
-            font-family: 微軟雅黑, 微軟正黑體;
-            /* font-style: initial; */
-            font-weight: initial;
-            margin: 15.5px 20px;
-        }
-
-        .Line {
-            width: 80%;
-            height: 2px;
-            color: #CF9C51;
-            background-color: #CF9C51;
-            /* box-sizing: 50px; */
-            /* border-bottom: #CF9C51; */
-            margin: 10px 100px;
-            font-family: 微軟雅黑, 微軟正黑體;
-            text-align: right;
-            font-size: 16px;
-
-        }
-
-        #section2 .row {
-            justify-content: center;
-        }
-
-        #section3 #Service h1.EN {
-            font-family: 微軟雅黑, 微軟正黑體;
-            text-align: center;
-            font-size: 72px;
-            font-weight: bold;
-            color: #CF9C51;
-            letter-spacing: 10px;
-            /* 設定文字間距 */
-            text-decoration: underline;
-            margin: 75px 428px 0px 817px;
-
-        }
-
-        .f48ctn {
-            font-family: 微軟雅黑, 微軟正黑體;
-            text-align: center;
-            font-weight: bold;
-            color: #CF9C51;
-            margin: 15.5px 479px 67px 861px;
-            font-size: 48px;
-            /* 設定文字大小 */
-            line-height: 48px;
-            /* 設定文字行距 */
-            /* letter-spacing: 3px; */
-            /* 設定文字間距 */
-            background-image: url(.gif);
-            /* 設定文字背景圖  */
-
-        }
-
-        .parallax {
-            width: 100%;
-            height: 100vh;
-            background-image: url('https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2018/11/18/99/5550381.jpg&s=Y&x=0&y=0&sw=1200&sh=750&sl=W&fw=1050');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-
-        .parallax-1 {
-            width: 100%;
-            height: 100vh;
-            background-image: url('https://www.omaker.com.tw/wp-content/uploads/2019/01/German-Car-Guide-Gear-Patrol-LEad-1440-1024x462.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-
-        .mask {
-            width: 100%;
-            height: 100%;
-            /* background-color: rgba(red, green, blue, alpha); */
-            background-color: rgba(0, 0, 0, .6);
-            /* 遮罩透明度 */
-        }
-
-        .cards {
-            width: 100%;
-            /* height: 100vh; */
-        }
-
-        /* .card img{
-            width: 100%;
-            height: 80%;
-        } */
-
-        .imgText {
-            width: 100%;
-            background-color: royalblue;
-        }
-
-        .tex {
-            /* width: 50%; */
-            /* height: 600px; */
-            background-color: rgb(255, 255, 255);
-            margin-right: 20px;
-            padding: 40px;
-            color: rgb(22, 60, 82);
-        }
-
-        .tex p {
-            margin: 10px;
-            padding: 10px;
-            color: rgb(40, 146, 207);
-        }
-
-        .footer {
-            width: 100%;
-            height: 353px;
-            background-color: rgb(5, 59, 85);
-            font-size: 12px;
-            /* text-align: center; */
-            line-height: 25px;
-            color: rgb(187, 177, 177);
-            padding: 40px 0;
-        }
-
-        .footer ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .footer ul.F-menu {
-            margin: 0 auto;
-            /* background-color: rgba(187, 143, 143, 0.267); */
-            width: 80%;
-            padding: 10px 15px;
-        }
-
-        .footer a {
-            text-decoration: none;
-        }
-
-        .footer a:visited {
-            color: rgb(101, 119, 179);
-        }
-
-        .footer .F-menu {
-            display: flex;
-            font-size: 10px;
-        }
-
-        .footer li {
-            margin-right: 28px;
-        }
-
-        .footer li a {
-            padding: 0px 10px;
-            background-color: rgba(15, 25, 46, 0.164);
-            /* display: block; */
-        }
-
-        /* .footer.F-menu ul {
-            display: none;
-        } */
-
-        /* .F-menu>li {
-            position: relative;
-        } */
-
-        .F-menu>li ul li {
-            padding: 1px 0;
-            /* 選項裡 間距值 */
-        }
-
-        /* .F-menu>li:hover ul {
-            display: block;
-        } */
-        .copy {
-            width: 50%;
-            margin: 0;
-            background-color: rgb(60, 60, 88);
-        }
-    </style>
 </head>
 
 <body>
@@ -350,14 +33,14 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white bg-my-color">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#section1">
                 <!-- Moving -->
                 <img src="./imgs/1-1logo.png" alt="Moving移動接駁國際租賃公司logo">
             </a>
             <div id="toggle" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <div class="one">1</div>
-                <div class="two">2</div>
-                <div class="three">3</div>
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
             </div>
 
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -365,16 +48,36 @@
                     <!-- HOME
                      <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li> -->
-                    <li class="nav-item active">
+                    <!-- <li class="nav-item active">
                         <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
-                    </li>
+                    </li> -->
                     <!-- 選單  顏色 text-light-->
-                    <li class="nav-item"><a class="nav-link " href="#">立即預約</a>
+                   
+                    <li class="nav-item"><a class="nav-link " href="#section1">立即預約</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">包車旅遊</a>
+                    <li class="nav-item"><a class="nav-link " href="#section2">關於我們</a>
+                    </li>
+                      <!-- Dropdown         -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">營業項目
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#section3">商務洽公</a>
+                            <a class="dropdown-item" href="#section3">機場接送</a>
+                            <a class="dropdown-item" href="#section3">順風共乘</a>
+                            <a class="dropdown-item" href="#section3">旅遊包車</a>
+                            <!-- 
+                                <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                         -->
+                        </div>
+                    </li>
+
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">包車旅遊</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">機場接送</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item"><a class="nav-link" href="#">車種介紹</a>
                     </li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#">計費方式</a>
@@ -384,17 +87,18 @@
                     </li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#">商務合作</a>
                 </li> -->
-                    <!-- Dropdown         -->
+
+                    <!-- Dropdown 2         -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">+More
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">聯絡我們</a>
-                            <a class="dropdown-item" href="#">關於我們</a>
+                            <a class="dropdown-item" href="#section2">關於我們</a>
                             <a class="dropdown-item" href="#">商務合作</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <!-- <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a> -->
                         </div>
                     </li>
                     <!-- <li class="nav-item">
@@ -419,75 +123,89 @@
             </div>
         </div>
     </div> -->
-    <h1>字體1</h1>
+        <!-- <h1>字體1</h1>
     <h2>字體2</h2>
     <h3>字體3</h3>
     <h4>字體4</h4>
     <h5>字體5</h5>
-    <h6>字體6</h6>
+    <h6>字體6</h6> -->
 
     </section>
 
-    <!-- 導覽列nav 希望第2頁才顯示 -->
+    <!-- 導覽列nav 希望第2頁才顯示 ? -->
 
 
 
 
     <!-- 第  2  資訊區 ------------------------------------------------------------  關於我們   -->
     <section id="section2">
-        <div class="container-fluid">
-            <div id="abut" class="row no-gutters p-5">
-                <div class="col-3 col-sm-4 p-5">
-                    <div id="abutT" class="align-items-center">
-                        <h1 class="d-inline">About</h1>
-                        <h1 class="d-inline">Moving</h1>
+        <div class="container">
+            <div id="abutAll" class="no-gutters row">
+                <div id="abut" class="col-12">
+                    <div class="abutL">
+                        <p>About</p>
+                        <p class="abutL_B">Moving</p>
+                    </div>
+
+                    <div class="abutR">
+                        <h1 class="font-family f48c">關於我們</h1>
+                        <strong>
+                            <p class=".f24c">每一趟旅程，都是逐夢的開始。</p>
+                        </strong>
+                        <p class="p-lighter f24c">安心、舒適、方便，您的每一哩路就交給路移動接駁。</p>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                    <!-- 用float沒有高，清楚兩邊 -->
+
+                </div>
+
+                <!-- 分隔線 -------------------------------------->
+                <div class="col-12">
+                    <div
+                        class="mybreadcrumb d-flex flex-md-row flex-column flex-md-nowrap flex-wrap align-items-md-end align-items-start justify-content-center">
+                        <div class="line"></div>
+                        <div class="line_text ml-md-3 ml-0">首頁 > 關於我們</div>
                     </div>
                 </div>
 
-                <div id="abutC" class="col-9 col-sm-4 p-5">
-                    <h1 class="d-inline font-family f48c">關於我們</h1>
-                    <blockquote class="blockquote text-decoration">
-                        <p class="mb-10 f24c"><strong>每一趟旅程，都是逐夢的開始。</strong></p>
-                        <p class="mb-10 f24c text-dark">安心、舒適、方便，您的每一哩就交給路移動接駁。
-                        </p>
-                    </blockquote>
-                </div>
-
-                <div class="w-100 align-items-center justify-content-center">
-                    <div class="Line">首頁 > 關於我們
+                <!-- 左 圖片 -->
+                <div id="abutDon" class="col-12">
+                    <div class="imgL">
+                        <img src="./imgs/2-about.jpg" width="450px" alt="Moving關於我們">
                     </div>
-                </div>
 
-                <div class="col-6 col-sm-4 p-5">
-                    <div class="w-100 d-flex justify-content-center">
-                        <div class="img bg-white mb-5">
-                            <img src="./imgs/2-about.jpg" width="540px" height="400px" alt="Moving關於我們">
+                    <!-- 圖右文 -->
+                    <div id="imgRt">
+                        <div class="align-items-start justify-content-start">
+                            <p class="mb-2 f24c"><strong>不管是全台灣的機場接送，還是商務洽公、</strong></p>
+                            <p class="mb-4 f24c"><strong>送機、接機服務、旅遊包車，都隨傳隨到！</strong></p>
+                            <p class="mb-3 f24c"><strong>24小時隨時待命，讓您不再為機場接送而煩惱。</strong></p>
+                            <div class="mb-3 f18c d-flex">每一趟的接送服務，我們都堅守3大原則：</div>                            
+                            <div class="mb-3 d-flex">
+                                <div class="align-items-start justify-content-start mr-5">
+                                    <p>1.嚴謹真誠</p>
+                                    <img src="./imgs/2-1rigorous.png" alt="Moving關於我們">
+                                </div>
+
+                                <div class="align-items-start justify-content-start  mr-5">
+                                    <p>2.安全舒適</p>
+                                    <img src="./imgs/2-2time.png" alt="Moving關於我們">
+                                </div>
+
+                                <div class="align-items-start justify-content-start  mr-5">
+                                    <p>3.準時接送</p>
+                                    <img src="./imgs/2-3safe.png" alt="Moving關於我們">
+                                </div>
+
+                            </div>
+                            <div class="mb-3 f18c d-inline">最安心的機場接送服務，就交給移動接駁。</div>
+
+                            <div style="clear: both;"></div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-6 col-sm-4 p-1">
-                    <div class="w-100 m-5">
-                        <p class="mb-2 f24c"><strong>不管是全台灣的機場接送，還是商務洽公、</strong></p>
-                        <p class="mb-5 f24c"><strong>送機、接機服務、旅遊包車，都隨傳隨到！</strong></p>
-                        <p class="mb-3 f24c"><strong>24小時隨時待命，讓您不再為機場接送而煩惱。</strong></p>
-                        <p class="mb-0 f18c p-3">每一趟的接送服務，我們都堅守3大原則：</p>
-                        <div class="mb-5 w-100 d-flex p-3">
-                            <p class="mr-5 f18c">1.嚴謹真誠</p>
-                            <p class="mr-5 f18c">2.安全舒適</p>
-                            <p class="mr-5 f18c">3.準時接送</p>
-                        </div>
-                        <div class="w-100 d-flex p-3">
-                            <img src="./imgs/1.嚴謹真誠rigorous.png" width="100px" height="100px" alt="Moving關於我們">
-
-                            <img src="./imgs/2.安全舒適time.png" width="100px" height="100px" alt="Moving關於我們">
-
-                            <img src="./imgs/3.準時接送safe.png" width="100px" height="100px" alt="Moving關於我們">
-
-
-                        </div>
-                        <p class="mb-0 f18c">最安心的機場接送服務，就交給移動接駁。</p>
-                    </div>
+                    <div style="clear: both;"></div>
                 </div>
             </div>
 
@@ -495,18 +213,19 @@
     </section>
 
     <!-- 第  3  資訊區 
-        align-items-start
+                align-items-start
                 align-items-center
-                row align-items-end ------------------------------------------------------------ Service 服務項目   -->
+                row align-items-end 
+                ------------------------------------------------------------ Service 服務項目   -->
     <section id="section3">
-        <div class="container-fluid bg-dark ">
-            <div id="Service">               
-                <div class="row justify-content-start ">
-                    <h1 class="d-inline EN">Service</h1>
+        <div class="container-fluid">
+            <div id="Service align-items-center">
+                <div id="ServiceTitle" class="justify-content-start ">
+                    <h1 class="EN">Service</h1>
                     <p class="f48ctn">服務項目</p>
                 </div>
-                <!-- <div id="ServicePic" class="row align-items-center"></div>
-                
+                <!-- 
+                <div id="ServicePic" class="row align-items-center"></div>                
                 justify-content-start
                 justify-content-center
                 justify-content-end
@@ -514,27 +233,30 @@
              -->
 
                 <div id="ServiceTex" class="row justify-content-center">
-                    <!-- 1自動內容撐大  -->
+                    <!-- 1自動內容撐大 -->
                     <div class="col col-sm-auto">
                         <div class="card">
                             <div data-toggle="collapse" data-target="#collapseExample">
-                                <img src="./imgs/301.png" alt="">
-                                <h4 class="text-muted">商務洽公</h4>
+                                <img src="./imgs/301.png" alt="商務洽公">
+                                <h2 class="text-muted">商務洽公</h4>
                             </div>
-                            <div class="collapse" id="collapseExample ">
+
+                            <div class="collapse" id="collapseExample">
                                 <div class="card card-body">
                                     商務洽公、送機、接機服務、旅遊包車
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <!-- 2自動內容撐大 -->
                     <div class="col col-sm-auto">
-                        <div class="card w-190">
+                        <div class="card">
                             <div data-toggle="collapse" data-target="#collapseExample">
-                                <img src="./imgs/302.png" alt="">
-                                <h4 class="text-muted"> 機場接送</h4>
+                                <img src="./imgs/302.png" alt="機場接送">
+                                <h2 class="text-muted"> 機場接送</h4>
                             </div>
+
                             <div class="collapse" id="collapseExample">
                                 <div class="card card-body">
                                     商務洽公、送機、接機服務、旅遊包車
@@ -547,7 +269,7 @@
                         <div class="card">
                             <div data-toggle="collapse" data-target="#collapseExample">
                                 <img src="./imgs/303.png" alt="">
-                                <h4 class="text-muted">順風共乘</h4>
+                                <h2 class="text-muted">順風共乘</h4>
                             </div>
                             <div class="collapse" id="collapseExample">
                                 <div class="card card-body">
@@ -561,7 +283,7 @@
                         <div class="card">
                             <div data-toggle="collapse" data-target="#collapseExample">
                                 <img src="./imgs/304.png" alt="">
-                                <h4 class="text-muted text-align">旅遊包車</h4>
+                                <h2 class="text-muted text-align">旅遊包車</h4>
                             </div>
                             <div class="collapse" id="collapseExample">
                                 <div class="card card-body">
@@ -572,10 +294,10 @@
                     </div>
                 </div>
                 <!-- 3 -->
-                <div class="col-3 col-sm-auto row align-items-end"">
+                <!-- <div class="col-3 col-sm-auto row align-items-end"">
                 <div class=" card">
                     更多↓ LEARN MORE
-                </div>
+                </div> -->
             </div>
 
             <!-- 秀出小卡 
@@ -587,9 +309,220 @@
              -->
         </div>
         </div>
-
-
     </section>
+    <!-- 第  4  資訊區 ------------------------------------------------------------  Introduction 車種介紹   -->
+    <section id="section4">
+        <div class="container-fluid">
+            <div id="Service align-items-center">
+                <div id="ServiceTitle" class="justify-content-start ">
+                    <h1 class="EN">Introduction</h1>
+                    <p class="f48ctn">車種介紹</p>
+                </div>
+            </div>
+
+            <div class="section RWDproduct002 model" id="m_RWDfullscreen01_32_1" md_id="1" tp_id="32" template_id="RWDfullscreen01">
+                <div class="section-inner">
+                    <div class="container section-content">
+                        <div class="section-subject row">
+                            <div class="col-md-12">
+                                <h1 class="main-title">Introduction</h1>
+                                <h2 class="sub-title">車種介紹</h2>
+                                <div class="section-line"></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="filter-portfolio">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" data-filter="*" data-sort-by="allseq"
+                                                class="btn btn-rj allcatebtn">ALL</a></li>
+                                        <li><a href="" class="btn btn-rj" data-filter=".c19"
+                                                data-sort-by="orgseq">Mercedes-Benz</a></li>
+                                        <li><a href="" class="btn btn-rj" data-filter=".c16"
+                                                data-sort-by="orgseq">Volkswagen</a></li>
+                                        <li><a href="" class="btn btn-rj" data-filter=".c4"
+                                                data-sort-by="orgseq">Hyundai</a></li>
+                                        <li><a href="" class="btn btn-rj" data-filter=".c10"
+                                                data-sort-by="orgseq">Toyota</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="show_info" style="text-align: center;"></div>
+                                <div class="popup-portfolio">
+
+                                    <div class="portfolio-item grow c10  col-sm-4" data-orgseq="00003" data-allseq="96">
+
+                                        <div class="inner-content">
+                                            <div class="portfolio-content">
+                                                <div class="portfolio-detail">
+                                                    <a href='http://www.comealong.com.tw/product_d.php?lang=tw&tb=1&id=42&id=42'
+                                                        target='_blank' title='Toyota Wish' class="_link">
+                                                        <div class="portfolio-text">
+                                                            <h4>Toyota Wish</h4>
+                                                            <p></p>
+
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+
+                                            <img src=""
+                                                relimg="https://www.comealong.com.tw/archive/image/product2/index/list-Toyota_Wish1.jpg"
+                                                class="img-responsive preload" border="0" style="display:none;" />
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="portfolio-item grow c10  col-sm-4" data-orgseq="00002" data-allseq="95">
+
+                                        <div class="inner-content">
+                                            <div class="portfolio-content">
+                                                <div class="portfolio-detail">
+                                                    <a href='http://www.comealong.com.tw/product_d.php?lang=tw&tb=1&id=36&id=36'
+                                                        target='_blank' title='TOYOTA CAMRY' class="_link">
+                                                        <div class="portfolio-text">
+                                                            <h4>TOYOTA CAMRY</h4>
+                                                            <p></p>
+
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+
+                                            <img src=""
+                                                relimg="https://www.comealong.com.tw/archive/image/product2/index/list-TOYOTA_CAMRY1.jpg"
+                                                class="img-responsive preload" border="0" style="display:none;" />
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="portfolio-item grow c4  col-sm-4" data-orgseq="00001" data-allseq="94">
+
+                                        <div class="inner-content">
+                                            <div class="portfolio-content">
+                                                <div class="portfolio-detail">
+                                                    <a href='http://www.comealong.com.tw/product_d.php?lang=tw&tb=1&id=24&id=24'
+                                                        target='_blank' title='Hyundai Grand Starex' class="_link">
+                                                        <div class="portfolio-text">
+                                                            <h4>Hyundai Grand Starex</h4>
+                                                            <p></p>
+
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+
+                                            <img src=""
+                                                relimg="https://www.comealong.com.tw/archive/image/product2/index/list-Hyundai_Grand_Starex1.jpg"
+                                                class="img-responsive preload" border="0" style="display:none;" />
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="portfolio-item grow c10  col-sm-4" data-orgseq="00001" data-allseq="93">
+
+                                        <div class="inner-content">
+                                            <div class="portfolio-content">
+                                                <div class="portfolio-detail">
+                                                    <a href='http://www.comealong.com.tw/product_d.php?lang=tw&tb=1&id=30&id=30'
+                                                        target='_blank' title='Toyota ALPHARD' class="_link">
+                                                        <div class="portfolio-text">
+                                                            <h4>Toyota ALPHARD</h4>
+                                                            <p></p>
+
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+
+                                            <img src=""
+                                                relimg="https://www.comealong.com.tw/archive/image/product2/index/list-Toyota__ALPHARD1.jpg"
+                                                class="img-responsive preload" border="0" style="display:none;" />
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="portfolio-item grow c16  col-sm-4" data-orgseq="00001" data-allseq="92">
+
+                                        <div class="inner-content">
+                                            <div class="portfolio-content">
+                                                <div class="portfolio-detail">
+                                                    <a href='http://www.comealong.com.tw/product_d.php?lang=tw&tb=1&id=45&id=45'
+                                                        target='_blank' title='Volkswagen T6' class="_link">
+                                                        <div class="portfolio-text">
+                                                            <h4>Volkswagen T6</h4>
+                                                            <p></p>
+
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+
+                                            <img src=""
+                                                relimg="https://www.comealong.com.tw/archive/image/product2/index/list-Volkswagen_T61.jpg"
+                                                class="img-responsive preload" border="0" style="display:none;" />
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="portfolio-item grow c19  col-sm-4" data-orgseq="00001" data-allseq="91">
+
+                                        <div class="inner-content">
+                                            <div class="portfolio-content">
+                                                <div class="portfolio-detail">
+                                                    <a href='http://www.comealong.com.tw/product_d.php?lang=tw&tb=1&id=51&id=51'
+                                                        target='_blank' title='Mercedes-Benz S-CLASS' class="_link">
+                                                        <div class="portfolio-text">
+                                                            <h4>Mercedes-Benz S-CLASS</h4>
+                                                            <p></p>
+
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+
+                                            <img src=""
+                                                relimg="https://www.comealong.com.tw/archive/image/product2/index/e62bc319268e936b.jpg"
+                                                class="img-responsive preload" border="0" style="display:none;" />
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
 
 
 
