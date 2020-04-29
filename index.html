@@ -37,6 +37,7 @@
                 <!-- Moving -->
                 <img src="./imgs/1-1logo.png" alt="Moving移動接駁國際租賃公司logo">
             </a>
+            
             <div id="toggle" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <div class="one"></div>
                 <div class="two"></div>
@@ -137,7 +138,13 @@
 
 
 
-    <!-- 第  2  資訊區 ------------------------------------------------------------  關於我們   -->
+    <!-- 第  2  資訊區 ------------------------------------------------------------  關於我們   
+    <section id="section2">
+   
+        <div class="container">
+               <div class="row">  
+                <div class="col-12">
+    -->
     <section id="section2">
         <div class="container">
             <div id="abutAll" class="no-gutters row">
@@ -150,7 +157,7 @@
                     <div class="abutR">
                         <h1 class="font-family f48c">關於我們</h1>
                         <strong>
-                            <p class=".f24c">每一趟旅程，都是逐夢的開始。</p>
+                            <p class="f24c">每一趟旅程，都是逐夢的開始。</p>
                         </strong>
                         <p class="p-lighter f24c">安心、舒適、方便，您的每一哩路就交給路移動接駁。</p>
                     </div>
@@ -169,20 +176,29 @@
                     </div>
                 </div>
 
-                <!-- 左 圖片 -->
+                <!-- 左 圖片 
+                    f d-flex      子項目並排
+                    父層
+                    flex-row    設置在水平方向
+                    flex-md-row 在超過手機≥768px 橫版
+                    flex-column 預設直向  手機設定垂直方向
+                    flex-md-nowrap 超過768不換行
+                    flex-wrap   換行
+                -->
                 <div id="abutDon" class="col-12">
                     <div class="imgL">
-                        <img src="./imgs/2-about.jpg" width="450px" alt="Moving關於我們">
+                        <img src="./imgs/2-about.jpg"  alt="Moving關於我們">
                     </div>
 
-                    <!-- 圖右文 -->
+                    <!-- 圖右文                  
+                    -->
                     <div id="imgRt">
                         <div class="align-items-start justify-content-start">
-                            <p class="mb-2 f24c"><strong>不管是全台灣的機場接送，還是商務洽公、</strong></p>
-                            <p class="mb-4 f24c"><strong>送機、接機服務、旅遊包車，都隨傳隨到！</strong></p>
-                            <p class="mb-3 f24c"><strong>24小時隨時待命，讓您不再為機場接送而煩惱。</strong></p>
-                            <div class="mb-3 f18c d-flex">每一趟的接送服務，我們都堅守3大原則：</div>                            
-                            <div class="mb-3 d-flex">
+                            <p class="mb-3 f24c"><strong>不管是全台灣的機場接送，還是商務洽公、
+                                <br>送機、接機服務、旅遊包車，都隨傳隨到！</br></p>
+                            <p class="mb-2 f24c"><strong>24小時隨時待命，讓您不再為機場接送而煩惱。</strong></p>
+                            <div class="mb-1 f18c">每一趟的接送服務，我們都堅守3大原則：</div>                            
+                            <div class="mb-2 d-flex">
                                 <div class="align-items-start justify-content-start mr-5">
                                     <p>1.嚴謹真誠</p>
                                     <img src="./imgs/2-1rigorous.png" alt="Moving關於我們">
@@ -201,7 +217,7 @@
                             </div>
                             <div class="mb-3 f18c d-inline">最安心的機場接送服務，就交給移動接駁。</div>
 
-                            <div style="clear: both;"></div>
+                            <!-- <div style="clear: both;"></div> -->
                         </div>
                     </div>
 
@@ -212,11 +228,7 @@
         </div>
     </section>
 
-    <!-- 第  3  資訊區 
-                align-items-start
-                align-items-center
-                row align-items-end 
-                ------------------------------------------------------------ Service 服務項目   -->
+    <!-- 第  3  資訊區 ------------------------------------------------------------ Service 服務項目   -->
     <section id="section3">
         <div class="container-fluid">
             <div id="Service align-items-center">
@@ -225,7 +237,10 @@
                     <p class="f48ctn">服務項目</p>
                 </div>
                 <!-- 
-                <div id="ServicePic" class="row align-items-center"></div>                
+                align-items-start
+                align-items-center
+                row align-items-end     
+                    <div id="ServicePic" class="row align-items-center"></div>                
                 justify-content-start
                 justify-content-center
                 justify-content-end
