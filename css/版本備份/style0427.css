@@ -46,32 +46,13 @@ html {
     #toggle {
         display: none;
     }
-
-}
-
-.dropdown-menu{
-background:#CF9C51;
-}
-.dropdown-item {
-    /* display: block;
-    width: 100%;
-    padding: .25rem 1.5rem;
-    clear: both;
-    font-weight: 400; 
-    color: #212529;
-    /* border: 0; */
-    /* text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent; */
-    background:#CF9C51;
-    
 }
 
 #toggle div {
     width: 100%;
     height: 5px;
-    background:#CF9C51;
-    margin: 4px 40px;
+    background: black;
+    margin: 4px auto;
     transition: all 0.3s;
     backface-visibility: hidden;
 }
@@ -104,31 +85,19 @@ a.nav-link:hover {
     font-size: 19px;
 }
 
-/* #section2 About Moving */
-
-#section2 .row {
-    justify-content: center;
-}
-
-/* #abutAll{
-    /* max-width: 1110px; */
+/* About Moving */
+#abutAll{
+    width: 1110px;
     /* background-color: rgb(243, 218, 183); */
-    /* margin:160px auto; */
-    /* padding: 200px auto; */
-/* }
- */
-
-#abut{
-    width: 100%;
-    max-width: 1110px;
-    /* margin-bottom: 0px; */   
-    padding: 160px 0 0 0; 
-
+    margin:160px auto;
 }
-
+#abut{
+    width: 1110px;
+    margin-bottom: 0px;
+    
+}
 .abutL{
-    width: 100%;
-    max-width: 262px;
+    width: 262px;
     float: left;
     margin-right: 22px;
 }
@@ -148,8 +117,7 @@ a.nav-link:hover {
 }
 /* 關於我們 */
 .abutR{
-    max-width: 820px;
-    width: 100%;    
+    width: 820px;    
     float: left;
     padding: 0px 0 0 0;
 
@@ -160,17 +128,7 @@ a.nav-link:hover {
     line-height: 24px;
     font-family: Microsoft YaHei UI, 微軟雅黑, 微軟正黑體;
     /* font-weight: bold;     */
-
 }
-/* 0429老師改寫 */
-.abutR p:nth-child(2){
-    font-weight: 900;
-}
-
-.abutR p:nth-child(3){
-    line-height: 47px;
-}
-
 .abutR.f48c{    
     margin:10px 0px 0px 0px ;
     /* align-items: flex-start; */
@@ -194,8 +152,7 @@ a.nav-link:hover {
 .f24c {
     font-family: 微軟雅黑, 微軟正黑體;
     text-align: left;
-    font-size: 24px;
-    line-height: 24px;    
+    font-size: 24px;    
 }
 
 .f18c {
@@ -208,6 +165,7 @@ a.nav-link:hover {
 
 .mybreadcrumb {
     display: flex;
+    align-items: center;
     clear: both;
     margin:0 0 80px 0;
 }
@@ -215,81 +173,60 @@ a.nav-link:hover {
 .line {
     background-color: #CF9C51;
     border-bottom: #CF9C51;
-    margin-bottom: 10px;
     height: 1px;
-    width: 100%;
+    width: 972px;
 }
 .line_text{
     color: #CF9C51;
     font-family: 微軟雅黑, 微軟正黑體;
-    min-width: 120px;
-    /* text-align: right; */
+    text-align: right;
     font-size: 16px;
-    /* float: right; */
+    float: right;
     margin-left: 18px;
 }
-
-#abutDon .imgL{
-    max-width: 540px;
-    /* width: 50%; */
-    background-color: #C6A758;
-    }
-
-#abutDon .imgL img{
-    width: 100%;
-    margin:0 30px 100px 0;
+#abutDon img{
+    margin:0 30px 0 0;
     float: left;
 }
-
-
-#imgRt{
-    float: left;
+.imgR{
+    float: right;
     clear: right;
-    max-width: 540px;
-    width: 100%;
-    /* padding: 80px 0; */
-}
-#imgRt strong {   
-    line-height: 32px;
+    width: 540px;
 }
 
-
-#imgRt img{    
+.imgR img{    
     width: 90px;
     height: 90px;
-    margin: unset;
-    
+    margin: 0 30px 30px 5px;
 
 }
 
-/* section3 Service 服務項目  */
-#section3{
-    padding:100px 0px;
-    background: #323333;
-    
-} 
-#Service{    
-    max-width: 1125px;
-    width: 100%;
-    
-    /* background-color: #323333; */
+#section2 .row {
+    justify-content: center;
 }
-#ServiceTitle h1.EN {
+
+
+/* Service 服務項目  */
+#Service{
+    padding:100px 100px;
+    background-color: #323333;
+}
+#section3 #Service h1.EN {
     font-family: 微軟雅黑, 微軟正黑體;
     text-align: center;
     font-size: 72px;
     font-weight: bold;
-    color: #C6A758;
+    color: #CF9C51;
     letter-spacing: 10px;
     /* 設定文字間距 */
     text-decoration: underline;
-    margin: 75px 0px 0px 0px;
+    margin: 75px 428px 0px 817px;
 }
 .f48ctn {
     font-family: 微軟雅黑, 微軟正黑體;
     text-align: center;
     font-weight: bold;
-    color: #C6A758;
+    color: #CF9C51;
     margin: 15.5px 0px 67px 0px;
     font-size: 48px;
     /* 設定文字大小 */
@@ -299,103 +236,42 @@ a.nav-link:hover {
     /* 設定文字間距 */
     background-image: url(.gif);
     /* 設定文字背景圖  */
-}
 
-/* section3 */
-#ServiceTitle{
-    width: 100%;
 }
-#ServiceTex{    
-    padding:10px 0 50px 0;
-   
+#ServiceTex{
+    padding:67px 0 380px 0;
 }
 #ServiceTex .card{
-    width: 230px;
-    /* border: rgba(15, 25, 46, 0.164); */
-    border: #797B7C;
+    border: rgba(15, 25, 46, 0.164);
+    border: royalblue;
     /* background:#6D6D6D; */
-    /* border: double; */
-    /* border: dotted; */
-    /* border: dashed; */
-    /* border: currentColor; */
-    background-color: transparent;
-    /* background-color:#797B7C; */
-    margin:auto 20px;
-    
+    background-color:323333;
 }
-#ServiceTex h2{
-    font-size: 36px;
-}
-#ServiceTex .text-muted{
-    /* color: #6c757d!important */
-    color: #fff !important ;
-    text-align: center;
-    margin:40px 0 10px 0;
-}
-#ServiceTex .card-body{
-    color:#797B7C;
-}
-
-
-/* #section4  Introduction 車種介紹  */
-
-/* #section4 .container{
-    justify-content: center;
-} */
-
-#Introduction h1.EN {
-    font-family: 微軟雅黑, 微軟正黑體;
-    text-align: center;
-    font-size: 72px;
-    font-weight: bold;
-    color: #C6A758;
-    letter-spacing: 2px;
-    /* 設定文字間距 */
-    text-decoration: underline;
-    margin: 75px 0px 0px 0px;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fff!important;
-    background-color: #b4b3b3;
-}
-#pills-tab a.nav-link:hover {
-    color: #ffffff!important;
-    /* color: #CF9C51!important; */
-    font-size: 20px;
-    background-color:#b4b3b3;
-}
-
-/* 第  5 資訊區  為您完成每一哩精彩旅程！  */
 .parallax {
     width: 100%;
-    /* max-height: 100vh; */
     height: 100vh;
-    /* background-image: url('../imgs/S4/more0501.png'); */
-        background-image: url('https://www.omaker.com.tw/wp-content/uploads/2019/01/German-Car-Guide-Gear-Patrol-LEad-1440-1024x462.jpg');
-    /* background-image: url('https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2018/11/18/99/5550381.jpg&s=Y&x=0&y=0&sw=1200&sh=750&sl=W&fw=1050'); */
+    background-image: url('https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2018/11/18/99/5550381.jpg&s=Y&x=0&y=0&sw=1200&sh=750&sl=W&fw=1050');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-#parallax .bg-primary {
-    background-color: #00000098!important;
-    /* background-color:#ffffff2e!important; */
-    text-align: center;
-    line-height: 55px;
-    border-radius: .5rem;
-    /* color:#C6A758; */
-    /* color: #CF9C51; */
-    /* color: rgb(87, 87, 87); */
-    color: rgba(255, 255, 255, 0.678);
-    
+.parallax-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://www.omaker.com.tw/wp-content/uploads/2019/01/German-Car-Guide-Gear-Patrol-LEad-1440-1024x462.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
-/* 第  6  資訊區  卡片*/
 
-
-
-
+.mask {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(red, green, blue, alpha); */
+    background-color: rgba(0, 0, 0, .6);
+    /* 遮罩透明度 */
+}
 
 .cards {
     width: 100%;
@@ -407,42 +283,8 @@ a.nav-link:hover {
     height: 80%;
 } */
 
-
-/* 第  7  資訊區   parallax */
-.parallax-1 {
-    width: 100%;
-    height: 100vh;
-/* background-image: url('https://www.omaker.com.tw/wp-content/uploads/2019/01/German-Car-Guide-Gear-Patrol-LEad-1440-1024x462.jpg'); */
-     background-image: url('https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2018/11/18/99/5550381.jpg&s=Y&x=0&y=0&sw=1200&sh=750&sl=W&fw=1050');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-#parallax-1 .bg-primary {
-    /* background-color: #007bff!important; */
-    /* color: #d62d3d; */
-    background-color: #c6a75847!important;
-    box-shadow: 0 0 19px black;
-    text-align: end;
-    text-rendering: initial;
-}
-
-.mask {
-    width: 100%;
-    height: 100%;
-    /* background-color: rgba(red, green, blue, alpha); */
-    background-color: rgba(0, 0, 0, .6);
-    /* 遮罩透明度 */
-}
-
-/* 第  8  資訊區   ----------車行加盟--- */
-
-/* footer */
-
 .imgText {
     width: 100%;
-    /* color: #C6A758; */
     background-color: royalblue;
 }
 
@@ -453,7 +295,6 @@ a.nav-link:hover {
     margin-right: 20px;
     padding: 40px;
     color: rgb(22, 60, 82);
-    
 }
 
 .tex p {
