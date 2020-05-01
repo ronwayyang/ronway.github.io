@@ -359,10 +359,10 @@ a.nav-link:hover {
     background-color: #b4b3b3;
 }
 #pills-tab a.nav-link:hover {
-    /* color: #888888!important; */
-    color: #CF9C51!important;
+    color: #ffffff!important;
+    /* color: #CF9C51!important; */
     font-size: 20px;
-    background-color: #4a4b4b;
+    background-color:#b4b3b3;
 }
 
 /* 第  5  資訊區    轉場  */
@@ -404,6 +404,7 @@ a.nav-link:hover {
 
 .imgText {
     width: 100%;
+    /* color: #C6A758; */
     background-color: royalblue;
 }
 
@@ -414,6 +415,7 @@ a.nav-link:hover {
     margin-right: 20px;
     padding: 40px;
     color: rgb(22, 60, 82);
+    
 }
 
 .tex p {
