@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--原有的 Required meta tags
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- 將CSS樣式表 <link> 複製-貼上到網頁中在所有其他樣式表之前的 <head> 中，以便載入 Bootstrap 的CSS。 -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- 用swiper輪播圖套件 css-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello,Moving</title>
+
+    <!-- font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" 
+    https://developer.mozilla.org/zh-CN/docs/Web/CSS/position
+    -->
+</head>
+
+<body>
+
+
+    <!-- 導覽列nav -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white bg-my-color">
+        <div class="container">
+            <a class="navbar-brand" href="#section1">
+                <!-- Moving -->
+                <img src="./imgs/1-1logo.png" alt="Moving移動接駁國際租賃公司logo">
+            </a>
+            
+            <div id="toggle" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <!-- HOME
+                     <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                    </li> -->
+                    <!-- 選單  顏色 text-light-->
+                   
+                    <li class="nav-item"><a class="nav-link " href="#section1">立即預約</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link " href="#section2">關於我們</a>
+                    </li>
+                      <!-- Dropdown         -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">營業項目
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#section3">商務洽公</a>
+                            <a class="dropdown-item" href="#section3">機場接送</a>
+                            <a class="dropdown-item" href="#section3">順風共乘</a>
+                            <a class="dropdown-item" href="#section3">旅遊包車</a>
+                            <!-- 
+                                <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                         -->
+                        </div>
+                    </li>
+
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">包車旅遊</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">機場接送</a>
+                    </li> -->
+                    <li class="nav-item"><a class="nav-link" href="#">車種介紹</a>
+                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">計費方式</a>
+                </li> -->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">最新消息</a>
+                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">商務合作</a>
+                </li> -->
+
+                    <!-- Dropdown 2         -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">+More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">聯絡我們</a>
+                            <a class="dropdown-item" href="#section2">關於我們</a>
+                            <a class="dropdown-item" href="#">商務合作</a>
+                            <!-- <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+                    <li>
+                        <div class="tel">
+                            <img src="./imgs/1-2tel.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--第1 資訊區 ------------------------------------------------------------  移動接駁首頁banner -->
+    <section id="section1">
+        <!-- <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="bennerTOP">
+                    <img src="./imgs/01banner.png" width="100%" height="978px" alt="移動接駁首頁banner"></div>
+            </div>
+        </div>
+    </div> -->
+        <!-- <h1>字體1</h1>
+    <h2>字體2</h2>
+    <h3>字體3</h3>
+    <h4>字體4</h4>
+    <h5>字體5</h5>
+    <h6>字體6</h6> -->
+
+    </section>
+
+    <!-- 導覽列nav 希望第2頁才顯示 ? -->
+
+
+
+
+    <!-- 第  2  資訊區 ------------------------------------------------------------  關於我們   
+    <section id="section2">
+   
+        <div class="container">
+               <div class="row">  
+                <div class="col-12">
+
+
+                    no-gutters 要讓間距預設30拿掉 一定要放在row
+    -->
+    <section id="section2">
+        <div class="container">
+            <div id="abutAll" class="no-gutters row">
+                <div id="abut" class="col-12">
+                    <div class="abutL">
+                        <p>About</p>
+                        <p class="abutL_B">Moving</p>
+                    </div>
+
+                    <div class="abutR">
+                        <h1 class="font-family f48c">關於我們</h1>
+                        <strong>
+                            <p class="f24c">每一趟旅程，都是逐夢的開始。</p>
+                        </strong>
+                        <p class="p-lighter f24c">安心、舒適、方便，您的每一哩路就交給路移動接駁。</p>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                    <!-- 用float沒有高，清楚兩邊 -->
+
+                </div>
+
+                <!-- 分隔線 -------------------------------------->
+                <div class="col-12">
+                    <div
+                        class="mybreadcrumb d-flex flex-md-row flex-column flex-md-nowrap flex-wrap align-items-md-end align-items-start justify-content-center">
+                        <div class="line"></div>
+                        <div class="line_text ml-md-3 ml-0">首頁 > 關於我們</div>
+                    </div>
+                </div>
+
+                <!-- 左 圖片 
+                    d-flex      子項目並排
+                    父層
+                    flex-row    設置在水平方向
+                    flex-md-row 在超過手機≥768px 橫版
+                    flex-column 預設直向  手機設定垂直方向
+                    flex-md-nowrap 超過768不換行
+                    flex-wrap   換行
+                -->
+
+                <div id="abutDon" class="col-12">
+                    <div class="imgL">
+                        <img src="./imgs/2-about.jpg"  alt="Moving關於我們">
+                    </div>
+
+                    <!-- 圖右文                  
+                    -->
+                    <div id="imgRt">
+                        <div class="align-items-start justify-content-start">
+                            <p class="mb-2 f24c"><strong>不管是全台灣的機場接送，還是商務洽公、</strong></p>
+                            <p class="mb-4 f24c"><strong>送機、接機服務、旅遊包車，都隨傳隨到！</strong></p>
+                            <p class="mb-3 f24c"><strong>24小時隨時待命，讓您不再為機場接送而煩惱。</strong></p>
+                            <div class="mb-3 f18c">每一趟的接送服務，我們都堅守3大原則：</div>                            
+                            <div class="mb-3 d-flex">
+                                <div class="align-items-start justify-content-start mr-5">
+                                    <p>1.嚴謹真誠</p>
+                                    <img src="./imgs/2-1rigorous.png" alt="Moving關於我們">
+                                </div>
+
+                                <div class="align-items-start justify-content-start  mr-5">
+                                    <p>2.安全舒適</p>
+                                    <img src="./imgs/2-2time.png" alt="Moving關於我們">
+                                </div>
+
+                                <div class="align-items-start justify-content-start  mr-5">
+                                    <p>3.準時接送</p>
+                                    <img src="./imgs/2-3safe.png" alt="Moving關於我們">
+                                </div>
+
+                            </div>
+                            <div class="mb-3 f18c d-inline">最安心的機場接送服務，就交給移動接駁。</div>
+
+                            <div style="clear: both;"></div>
+                        </div>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 第  3  資訊區 ------------------------------------------------------------ Service 服務項目   -->
+    <section id="section3">
+        <div class="container-fluid">
+            <div id="Service align-items-center">
+                <div id="ServiceTitle" class="justify-content-start ">
+                    <h1 class="EN">Service</h1>
+                    <p class="f48ctn">服務項目</p>
+                </div>
+                <!-- 
+                align-items-start
+                align-items-center
+                row align-items-end     
+                    <div id="ServicePic" class="row align-items-center"></div>                
+                justify-content-start
+                justify-content-center
+                justify-content-end
+                justify-content-around
+             -->
+
+                <div id="ServiceTex" class="row justify-content-center">
+                    <!-- 1自動內容撐大 -->
+                    <div class="col col-sm-auto">
+                        <div class="card">
+                            <div data-toggle="collapse" data-target="#collapseExample">
+                                <img src="./imgs/301.png" alt="商務洽公">
+                                <h2 class="text-muted">商務洽公</h4>
+                            </div>
+
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    商務洽公、送機、接機服務、旅遊包車
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2自動內容撐大 -->
+                    <div class="col col-sm-auto">
+                        <div class="card">
+                            <div data-toggle="collapse" data-target="#collapseExample">
+                                <img src="./imgs/302.png" alt="機場接送">
+                                <h2 class="text-muted"> 機場接送</h4>
+                            </div>
+
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    商務洽公、送機、接機服務、旅遊包車
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3自動內容撐大 -->
+                    <div class="col col-sm-auto">
+                        <div class="card">
+                            <div data-toggle="collapse" data-target="#collapseExample">
+                                <img src="./imgs/303.png" alt="">
+                                <h2 class="text-muted">順風共乘</h4>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    商務洽公、送機、接機服務、旅遊包車
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4自動內容撐大 -->
+                    <div class="col col-sm-auto">
+                        <div class="card">
+                            <div data-toggle="collapse" data-target="#collapseExample">
+                                <img src="./imgs/304.png" alt="">
+                                <h2 class="text-muted text-align">旅遊包車</h4>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    商務洽公、送機、接機服務、旅遊包車
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <!-- <div class="col-3 col-sm-auto row align-items-end"">
+                <div class=" card">
+                    更多↓ LEARN MORE
+                </div> -->
+            </div>
+
+            <!-- 秀出小卡 
+            <div class="col-sm">
+                <div class="card" data-toggle="modal" data-target="#exampleModal">
+                    One of three columns
+                </div>
+            </div>
+             -->
+        </div>
+        </div>
+    </section>
+    <!-- 第  4  資訊區 ------------------------------------------------------------  Introduction 車種介紹   -->
+    <section id="section4">
+        <div class="container-fluid">
+            <div id="Service align-items-center">
+                <div id="ServiceTitle" class="justify-content-start ">
+                    <h1 class="EN">Introduction</h1>
+                    <p class="f48ctn">車種介紹</p>
+                </div>
+            </div>
+
+            <div class="section RWDproduct002 model" id="m_RWDfullscreen01_32_1" md_id="1" tp_id="32" template_id="RWDfullscreen01">
+                <div class="section-inner">
+                    <div class="container section-content">
+                        <div class="section-subject row">
+                            <div class="col-md-12">
+                                <h1 class="main-title">Introduction</h1>
+                                <h2 class="sub-title">車種介紹</h2>
+                                <div class="section-line"></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="filter-portfolio">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" data-filter="*" data-sort-by="allseq"
+                                                class="btn btn-rj allcatebtn">ALL</a></li>
+                                        <li><a href="" class="btn btn-rj" data-filter=".c19"
+                                                data-sort-by="orgseq">Mercedes-Benz</a></li>
+                                        <li><a href="" class="btn btn-rj" data-filter=".c16"
+                                                data-sort-by="orgseq">Volkswagen</a></li>
+                                        <li><a href="" class="btn btn-rj" data-filter=".c4"
+                                                data-sort-by="orgseq">Hyundai</a></li>
+                                        <li><a href="" class="btn btn-rj" data-filter=".c10"
+                                                data-sort-by="orgseq">Toyota</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="show_info" style="text-align: center;"></div>
+                                <div class="popup-portfolio">
+
+                                    <div class="portfolio-item grow c10  col-sm-4" data-orgseq="00003" data-allseq="96">
+
+                                        <div class="inner-content">
+                                            <div class="portfolio-content">
+                                                <div class="portfolio-detail">
+                                                    <a href='http://www.comealong.com.tw/product_d.php?lang=tw&tb=1&id=42&id=42'
+                                                        target='_blank' title='Toyota Wish' class="_link">
+                                                        <div class="portfolio-text">
+                                                            <h4>Toyota Wish</h4>
+                                                            <p></p>
+
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+
+                                            <img src=""
+                                                relimg="https://www.comealong.com.tw/archive/image/product2/index/list-Toyota_Wish1.jpg"
+                                                class="img-responsive preload" border="0" style="display:none;" />
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="portfolio-item grow c10  col-sm-4" data-orgseq="00002" data-allseq="95">
+
+                                        <div class="inner-content">
+                                            <div class="portfolio-content">
+                                                <div class="portfolio-detail">
+                                                    <a href='http://www.comealong.com.tw/product_d.php?lang=tw&tb=1&id=36&id=36'
+                                                        target='_blank' title='TOYOTA CAMRY' class="_link">
+                                                        <div class="portfolio-text">
+                                                            <h4>TOYOTA CAMRY</h4>
+                                                            <p></p>
+
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+
+                                            <img src=""
+                                                relimg="https://www.comealong.com.tw/archive/image/product2/index/list-TOYOTA_CAMRY1.jpg"
+                                                class="img-responsive preload" border="0" style="display:none;" />
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="portfolio-item grow c4  col-sm-4" data-orgseq="00001" data-allseq="94">
+
+                                        <div class="inner-content">
+                                            <div class="portfolio-content">
+                                                <div class="portfolio-detail">
+                                                    <a href='http://www.comealong.com.tw/product_d.php?lang=tw&tb=1&id=24&id=24'
+                                                        target='_blank' title='Hyundai Grand Starex' class="_link">
+                                                        <div class="portfolio-text">
+                                                            <h4>Hyundai Grand Starex</h4>
+                                                            <p></p>
+
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+
+                                            <img src=""
+                                                relimg="https://www.comealong.com.tw/archive/image/product2/index/list-Hyundai_Grand_Starex1.jpg"
+                                                class="img-responsive preload" border="0" style="display:none;" />
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="portfolio-item grow c10  col-sm-4" data-orgseq="00001" data-allseq="93">
+
+                                        <div class="inner-content">
+                                            <div class="portfolio-content">
+                                                <div class="portfolio-detail">
+                                                    <a href='http://www.comealong.com.tw/product_d.php?lang=tw&tb=1&id=30&id=30'
+                                                        target='_blank' title='Toyota ALPHARD' class="_link">
+                                                        <div class="portfolio-text">
+                                                            <h4>Toyota ALPHARD</h4>
+                                                            <p></p>
+
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+
+                                            <img src=""
+                                                relimg="https://www.comealong.com.tw/archive/image/product2/index/list-Toyota__ALPHARD1.jpg"
+                                                class="img-responsive preload" border="0" style="display:none;" />
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="portfolio-item grow c16  col-sm-4" data-orgseq="00001" data-allseq="92">
+
+                                        <div class="inner-content">
+                                            <div class="portfolio-content">
+                                                <div class="portfolio-detail">
+                                                    <a href='http://www.comealong.com.tw/product_d.php?lang=tw&tb=1&id=45&id=45'
+                                                        target='_blank' title='Volkswagen T6' class="_link">
+                                                        <div class="portfolio-text">
+                                                            <h4>Volkswagen T6</h4>
+                                                            <p></p>
+
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+
+                                            <img src=""
+                                                relimg="https://www.comealong.com.tw/archive/image/product2/index/list-Volkswagen_T61.jpg"
+                                                class="img-responsive preload" border="0" style="display:none;" />
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="portfolio-item grow c19  col-sm-4" data-orgseq="00001" data-allseq="91">
+
+                                        <div class="inner-content">
+                                            <div class="portfolio-content">
+                                                <div class="portfolio-detail">
+                                                    <a href='http://www.comealong.com.tw/product_d.php?lang=tw&tb=1&id=51&id=51'
+                                                        target='_blank' title='Mercedes-Benz S-CLASS' class="_link">
+                                                        <div class="portfolio-text">
+                                                            <h4>Mercedes-Benz S-CLASS</h4>
+                                                            <p></p>
+
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+
+                                            <img src=""
+                                                relimg="https://www.comealong.com.tw/archive/image/product2/index/e62bc319268e936b.jpg"
+                                                class="img-responsive preload" border="0" style="display:none;" />
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <!--摺疊 抽屜 -->
+    <section>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                    aria-controls="pills-home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                    aria-controls="pills-contact" aria-selected="false">Contact</a>
+            </li>
+        </ul>
+
+        <!-- 摺疊使用 套件輪播圖 第一個成功 -->
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- <div class="swiper-slide">Slide 1</div> -->
+                        <div class="swiper-slide"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRCju201-gmbtmtIYhr8I7I4h4HNeZ0f8nxSKP6bw06H5s4ZX_I"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://res.cloudinary.com/wegowordpress/image/upload/c_crop,h_1175,w_1880,x_0,y_39/h_675,w_1080/v1554263841/travel-cover_hql5vz.jpg"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="https://pic.pimg.tw/loloto/1545850883-2546562529.jpg"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/1140/700?random=3" alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://storage.googleapis.com/www-cw-com-tw/article/201909/article-5d8595b6de5ef.jpg"
+                                alt=""></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <!-- 摺疊使用 套件輪播圖 第2個加入 搜尋 初始化修改  -->
+                <div class="swiper-container">
+                    <!-- 起    -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMnCP8ZhqVytmj8Hq1C03EXHrWBmLhm7gIO1cYNZ7k-8sd0NfR"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://res.cloudinary.com/wegowordpress/image/upload/c_crop,h_1175,w_1880,x_0,y_39/h_675,w_1080/v1554263841/travel-cover_hql5vz.jpg"
+                                alt=""></div>
+                        <div class="swiper-slide"> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMnCP8ZhqVytmj8Hq1C03EXHrWBmLhm7gIO1cYNZ7k-8sd0NfR"
+                                alt=""></div>
+                        <div class="swiper-slide"> <img src="https://cdn2.ettoday.net/images/1494/1494444.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"> <img src="https://cw1.tw/CW/images/blog/C1435309810129.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"> <img
+                                src="https://live.staticflickr.com/1831/43085296635_c9c31ac488_b.jpg" alt=""></div>
+                        <div class="swiper-slide"> <img
+                                src="https://m.cignacmb.com/resource/upimg/201702/2017022411574590960.jpg" alt="">
+                        </div>
+                        <!-- <div class="swiper-slide">  <img src="./img/5278367_full.jpg" alt=""></div> -->
+                        <!-- <div class="swiper-slide">Slide 10</div> -->
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- 末 -->
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                Hello,Moving
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 互動視窗 Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Hello, parallax 範例 02</h1>
+    <section id="parallax" div class="parallax">
+        <div class="mask d-none d-lg-block">
+            <!-- 遮罩顯示 與尺寸變化隱藏 -->
+            <div class="container h-100">
+                <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                    <h1 class="bg-primary text-white d-inline p-3">Hello,Moving</h1>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <h1>Hello, 卡片 範例 03</h1>
+
+    <!-- 元件  卡片 -->
+    <section id="cards-group" div class="cards d-flex align-items-center">
+        <!-- 畫面置中分3塊，手機版本要是 字上圖下 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <!-- 01 電腦版991px 以上lg時的版面 -->
+                    <div class="card w-100">
+                        <!-- style="width: 18rem  內容字寬 -->
+                        <img src="https://www.omaker.com.tw/wp-content/uploads/2019/01/German-Car-Guide-Gear-Patrol-LEad-1440-1024x462.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">共享經濟時代來臨</h5>
+                            <p class="card-text">
+                                共享經濟能降低運輸成本、活化人力與物力資源、改善環境汙染與能源消耗等問題，有您的參與，將與我們一同逐步實現運輸共享經濟的目標。</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <!-- 02 -->
+                    <div class="card w-100">
+                        <img src="https://compathy-magazine-assets.compathy.net/uploads/2019/08/f5f810e9b0aa63dde7732d23a5a6e617_s-640x480.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">不只便捷還有安全</h5>
+                            <p class="card-text">我們以真誠、嚴謹的態度，為客戶提供優良的搭乘及準時接送服務；更以安全第一的服務準則，讓客戶們能夠安心平安抵達目的地。</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <!-- 03 -->
+                    <div class="card w-100">
+                        <img src="https://www.brandinlabs.com/wp-content/uploads/2019/03/%E8%B5%B7%E4%BA%9E%E6%B1%BD%E8%BB%8A%E5%85%A8%E6%96%B0LOGO%E6%9B%9D%E5%85%89%EF%BC%8C%E5%A6%82%E6%9E%9C%E5%85%A8%E9%9D%A2%E6%9B%B4%E6%8F%9B%E4%BD%A0%E6%9C%83%E5%96%9C%E6%AD%A1%E5%97%8E%EF%BC%9F.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <h1>Hello, 換圖片 範例 01</h1>
+    <section id="imgT">
+        <div class="container">
+            <!-- Content here -->
+            <div class="row">
+                <div class=" col-lg col-lg-6 order-1 order-1g-0">
+                    <!-- 電腦版991px 以上lg時的版面 左圖右文 圖可換圖 由小寫大-->
+                    <!-- <picture> -->
+                    <img class="abc w-100" src="https://img3.secretchina.com/pic/2019/12-27/p2590882a501012458-ss.jpg"
+                        class="card-img-top" alt="...">
+                    <!-- </picture> -->
+                </div>
+
+                <!-- 右文字區 -->
+                <div class="col-12 col-lg-6">
+                    <div class="tex">
+                        <h2>車行加盟</h2>
+                        <span>城市移動訂車平台系統開放加盟，歡迎車行同業加盟派遣</span>
+                        <h3>系統化線上管理：</h3>
+                        <span>所有訂單線上管理，由專業客服24小時服務客戶及司機。</span>
+                        <h3>超方便接單APP：</h3>
+                        透過APP即時發送車輛需求、確認訂單狀況，接單不漏拍。
+                        <h4>
+                            只要4步驟：
+                            <p> 1
+                                雙方面談/
+                                經營理念<br>
+                                2
+                                條款說明/
+                                簽定合約<br>
+                                3
+                                教育訓練<br>
+                                4
+                                試營運<br>
+                            </p>
+                            車行加盟超簡易！<br></h4>
+                        <H4>｜聯繫我們｜ 加盟專線：0800-000-888 歡迎來電</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="parallax-1" class="parallax-1">
+        <div class="mask d-none d-lg-block">
+            <!-- 遮罩顯示 與尺寸變化隱藏 -->
+            <div class="container h-100">
+                <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                    <h1 class="bg-primary text-white d-inline p-3">移動接駁-標題</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="imgT-1">
+        <div class="container">
+            <!-- Content here -->
+            <div class="row">
+                <div class=" col-lg col-lg-6 ">
+                    <!-- 電腦版991px 以上lg時的版面 左圖右文 圖可換圖 由小寫大-->
+                    <!-- <picture> -->
+                    <img class="abc w-100" src="https://img3.secretchina.com/pic/2019/12-27/p2590882a501012458-ss.jpg"
+                        class="card-img-top" alt="...">
+                    <!-- </picture> -->
+                </div>
+
+                <!-- 右文字區 -->
+                <div class="col-12 col-lg-6 order-1 order-1g-0">
+                    <div class="tex">
+                        <h2>策略聯盟</h2>
+                        <p>運用您的資源，<br>結合我們的資源，<br>共創雙贏吧!<br></p>
+                        <p>歡迎異業合作，共同串接曝光資源。</p>
+                        <h2>豐富合作經驗<br>
+                            合作快速又順利</h2>
+                        <p>任何合作機會，歡迎來電<br>洽詢0800-000-888</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--資訊區   -->
+    <section id="...">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-sm-3">
+                    <div class="card">
+                        One of three columns
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" data-toggle="modal" data-target="#exampleModal">
+                        One of three columns
+                    </div>
+                </div>
+                <!-- 自動內容撐大 -->
+                <div class="col-sm-auto">
+                    <div class="card">
+                        <div data-toggle="collapse" data-target="#collapseExample">
+                            Hello,Moving
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                richardson ad
+                                squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第  2  資訊區   -->
+    <section id="section2">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-sm-3">
+                    <div class="card">
+                        One of three columns
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" data-toggle="modal" data-target="#exampleModal">
+                        One of three columns
+                    </div>
+                </div>
+                <!-- 自動內容撐大 -->
+                <div class="col-sm-auto">
+                    <div class="card">
+                        <div data-toggle="collapse" data-target="#collapseExample">
+                            Hello,Moving
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                richardson ad
+                                squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--資訊區   -->
+    <section id="footer" class="container-fluid">
+        <div class="footer">
+            <ul class="F-menu">
+                <!-- <li><span class="mainFooter">會員中心</span>
+                    <ul>
+                        <li><a href="">會員登入</a></li>
+                        <li><a href="">會員註冊</a></li>
+                        <li><a href="">忘記密碼</a></li>
+                    </ul>
+                </li> -->
+                <li><span class="mainFooter">關於我們</span>
+                    <ul>
+                        <li><a href="">乘客須知</a></li>
+                        <li><a href="">服務條款</a></li>
+                        <li><a href="">隱私權</a></li>
+                        <!-- <li><a href="">租賃定型化契約</a></li> -->
+                        <li><a href="">問與答</a></li>
+                        <!-- <li><a href="">服務據點</a></li> -->
+                    </ul>
+                </li>
+                <li> <span class="mainFooter">預約訂車</span>
+                    <ul>
+                        <li><a href="">預約流程</a></li>
+                        <li><a href="">計費方式</a></li>
+                        <li><a href="">訂單查詢</a></li>
+                        <!-- <li><a href="">租賃定型化契約</a></li> -->
+                        <!-- <li><a href="">發票查詢</a></li> -->
+                        <!-- <li><a href="">車輛定位</a></li> -->
+                    </ul>
+                </li>
+
+                <ul class="contactList">
+                    <span class="mainFooter">與我們聯絡</span>
+                    <li><span class="icon-airline">Line ID：<a href=" " target="_blank">0920858983</a></span></li>
+                    <li><span class="icon-airwechat">Wechat ID：<a target="_blank">0920-858-983</a></span></li>
+                    <li><span class="icon-mail"><a href="mailto:yang.ronway@gmail.com">yang.ronway@gmail.com</a></span>
+                    </li>
+                    <li><span class="icon-phone">24小時客服專線：<a href="tel:0920-585-983">0920-858-983</a></span></li>
+                </ul>
+                <ul class="shareList" id="shareList">
+                    <span class="mainFooter">加入好友</span>
+                    <li><a class="icon-airline" href="https://line.me/R/ti/p/%40snd5082k " target="_blank"></a></li>
+                    <li><a class="icon-facebook" href="https://www.facebook.com/airportfrstcar/" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="icon-whatsapp" href="https://wa.me/" target="_blank">
+                            <svg class="icon-whatsapp">
+                                <use xlink:href=""></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+
+            <div class="copy">
+                版權聲明 ©2020 Moving移動接駁租賃有限公司
+                本網頁僅供教學及練習使用，若有冒犯請洽0955-102703</div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- 用swiper輪播圖套件 -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script>
+
+        //   用swiper輪播圖套件 輪播圖變數  始
+        var swiper = new Swiper('.swiper-container', {
+            observer: true,
+            observeParents: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        //   用swiper輪播圖套件 輪播圖變數  末
+
+        $("#toggle").click(function () {
+            $(this).toggleClass("on");
+        });
+
+        $('#collapseExample').on('show.bs.collapse', function () {
+            console.log("Test");
+        })
+
+    </script>
+</body>
+
+</html>
