@@ -16,14 +16,21 @@ html {
 
 #section1 {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     /* height:calc(100vh-100px)              */
-    background-image:url("../imgs/01banner.png");
+    /* background-image:url("../imgs/01banner.png");
     background-color: black;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
+@media (max-width: 576px){
+    .bennerTOP img {
+        width: 100%;
+        height: unset;
+        /* font-size: 12px; */
+    }
+}
 
 .no-gutters {
     margin-right: -5px;
@@ -88,18 +95,18 @@ background:#CF9C51;
     transform: rotate(-45deg) translate(7px, -8px);
 }
 
-.bg-my-color {
+.navbar {
     /* background-color: #947B27 !important; */
-    background-color: black !important;
+    background-color: black;
 }
 
-a.nav-link {
+.navbar .navbar-nav .nav-link {
     /* color: #947B27 !important; */
-    color: #CF9C51 !important;
+    color: #CF9C51;
 }
 
-a.nav-link:hover {
-    color: rgb(255, 255, 255) !important;
+.navbar .navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255);
     /* color: #CF9C51; */
     font-size: 19px;
 }
@@ -268,6 +275,7 @@ a.nav-link:hover {
     background: #323333;
     
 } 
+
 #Service{    
     max-width: 1125px;
     width: 100%;
@@ -336,12 +344,17 @@ a.nav-link:hover {
     color:#797B7C;
 }
 
+/* @media (max-width: 576px){
+    .bennerTOP img {
+        width: 100%;
+        height: unset;
+        /* font-size: 12px; */
+    }
+} */
+
+
 
 /* #section4  Introduction 車種介紹  */
-
-/* #section4 .container{
-    justify-content: center;
-} */
 
 #Introduction h1.EN {
     font-family: 微軟雅黑, 微軟正黑體;
@@ -356,14 +369,17 @@ a.nav-link:hover {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fff!important;
+    color: #fff;
     background-color: #b4b3b3;
 }
 #pills-tab a.nav-link:hover {
-    color: #ffffff!important;
-    /* color: #CF9C51!important; */
-    font-size: 20px;
+    color: #ffffff;
     background-color:#b4b3b3;
+}
+
+.cars_tab .nav-link:hover {
+    color: #ffffff;
+    background-color:red;
 }
 
 /* 第  5 資訊區  為您完成每一哩精彩旅程！  */
@@ -392,10 +408,6 @@ a.nav-link:hover {
     
 }
 /* 第  6  資訊區  卡片*/
-
-
-
-
 
 .cards {
     width: 100%;
@@ -428,6 +440,14 @@ a.nav-link:hover {
     text-rendering: initial;
 }
 
+/* @media (min-width: 992px) {
+    .parallaxB {
+        width: unset;
+        height: unset;
+    }
+
+} */
+
 .mask {
     width: 100%;
     height: 100%;
@@ -436,9 +456,9 @@ a.nav-link:hover {
     /* 遮罩透明度 */
 }
 
-/* 第  8  資訊區   ----------車行加盟--- */
+/* 第  8 資訊區   ---策略聯盟------ 車行加盟--- */
 
-/* footer */
+
 
 .imgText {
     width: 100%;
@@ -462,6 +482,8 @@ a.nav-link:hover {
     color: rgb(40, 146, 207);
 }
 
+
+/* footer */
 .footer {
     width: 100%;
     height: 353px;
@@ -480,10 +502,7 @@ a.nav-link:hover {
 }
 
 .footer ul.F-menu {
-    margin: 0 auto;
-    /* background-color: rgba(187, 143, 143, 0.267); */
-    width: 80%;
-    padding: 10px 15px;
+
 }
 
 .footer a {
@@ -525,8 +544,50 @@ a.nav-link:hover {
 /* .F-menu>li:hover ul {
     display: block;
 } */
+
 .copy {
     width: 50%;
     margin: 0;
     background-color: rgb(60, 60, 88);
 }
+
+.contactList li {
+    padding-left: 30px;
+}
+
+.icon-line {
+    position: relative;
+}
+
+.icon-line::before {
+    content:'';
+    width:25px;
+    height:25px;
+    background-image: url('../imgs/foot/line.png');
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    left: -30px;
+    top: -5px;
+}
+
+
+@media (max-width: 1000px){
+    .table {
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px){
+    .table {
+        font-size: 12px;
+    }
+}
+@media (max-width: 576px){
+    .table {
+        font-size: 12px;
+    }
+}
+
+/* @media (min-width: xxxx以上) {
+
+} */

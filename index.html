@@ -31,7 +31,23 @@
 
     <!-- 導覽列nav -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white bg-my-color">
+
+    <!--第1 資訊區 ------------------------------------------------------------  移動接駁 首頁banner -->
+    <section id="section1">
+        <div class="bennerTOP">
+            <img src="./imgs/01banner.png" width="100%" height="978px" alt="移動接駁首頁banner">
+        </div>
+        <!-- <h1>字體1</h1>
+    <h2>字體2</h2>
+    <h3>字體3</h3>
+    <h4>字體4</h4>
+    <h5>字體5</h5>
+    <h6>字體6</h6> -->
+
+    </section>
+
+    <!-- 導覽列nav 希望第2頁才顯示 ? -->
+    <nav class="navbar navbar-expand-lg navbar-light text-white">
         <div class="container">
             <a class="navbar-brand" href="#section1">
                 <!-- Moving -->
@@ -86,7 +102,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#section5">最新消息</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#secuion9">商務合作</a>
+                    <li class="nav-item"><a class="nav-link" href="#secuion8">商務合作</a>
                     </li>
 
                     <!-- Dropdown 2         -->
@@ -97,7 +113,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#footer">聯絡我們</a>
                             <a class="dropdown-item" href="#section2">關於我們</a>
-                            <a class="dropdown-item" href="#secuion9">商務合作</a>
+                            <a class="dropdown-item" href="#secuion8">商務合作</a>
                             <!-- <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Something else here</a> -->
                         </div>
@@ -116,27 +132,6 @@
             </div>
         </div>
     </nav>
-    <!--第1 資訊區 ------------------------------------------------------------  移動接駁 首頁banner -->
-    <section id="section1">
-        <!-- <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="bennerTOP">
-                    <img src="./imgs/01banner.png" width="100%" height="978px" alt="移動接駁首頁banner"></div>
-            </div>
-        </div>
-    </div> -->
-        <!-- <h1>字體1</h1>
-    <h2>字體2</h2>
-    <h3>字體3</h3>
-    <h4>字體4</h4>
-    <h5>字體5</h5>
-    <h6>字體6</h6> -->
-
-    </section>
-
-    <!-- 導覽列nav 希望第2頁才顯示 ? -->
-
     <!-- 第  2  資訊區 ------------------------------------------------------------  關於我們   
     <section id="section2">   
         <div class="container">
@@ -223,18 +218,18 @@
         </div>
     </section>
 
-    <!-- 第  3  資訊區 ------------------------------------------------------------ Service 服務項目   -->
+    <!-- 第  3  資訊區 ------------------------------------------- Service 服務項目   -->
     <section id="section3">
         <div class="container-fluid">
             <div id="Service align-items-center">
-                <div id="ServiceTitle" class="justify-content-start ">
+                <div id="ServiceTitle" class="justify-content-start">
                     <h1 class="EN">Service</h1>
                     <p class="f48ctn">服務項目</p>
                 </div>
                 <!-- 
                 align-items-start
-                align-items-center
-                row align-items-end     
+                align-items-center                
+                align-items-end     
                     <div id="ServicePic" class="row align-items-center"></div>                
                 justify-content-start
                 justify-content-center
@@ -242,10 +237,10 @@
                 justify-content-around
              -->
 
-                <div id="ServiceTex" class="row justify-content-center">
+                <div id="ServiceTex" class="p-5 row justify-content-center align-items-center">
                     <!-- 1自動內容撐大 -->
-                    <div class="col col-sm-auto">
-                        <div class="card">
+                    <div class="col col-sm-auto p-4">
+                        <div class="card align-items-center">
                             <div data-toggle="collapse" data-target="#collapseExample">
                                 <img src="./imgs/301.png" alt="商務洽公">
                                 <h2 class="text-muted">商務洽公</h4>
@@ -260,7 +255,7 @@
                     </div>
 
                     <!-- 2自動內容撐大 -->
-                    <div class="col col-sm-auto">
+                    <div class="col col-sm-auto p-4">
                         <div class="card">
                             <div data-toggle="collapse" data-target="#collapseExample">
                                 <img src="./imgs/302.png" alt="機場接送">
@@ -275,7 +270,7 @@
                         </div>
                     </div>
                     <!-- 3自動內容撐大 -->
-                    <div class="col col-sm-auto">
+                    <div class="col col-sm-auto p-4">
                         <div class="card">
                             <div data-toggle="collapse" data-target="#collapseExample">
                                 <img src="./imgs/303.png" alt="">
@@ -289,7 +284,7 @@
                         </div>
                     </div>
                     <!-- 4自動內容撐大 -->
-                    <div class="col col-sm-auto">
+                    <div class="col col-sm-auto p-4">
                         <div class="card">
                             <div data-toggle="collapse" data-target="#collapseExample">
                                 <img src="./imgs/304.png" alt="">
@@ -318,10 +313,9 @@
             </div>
              -->
         </div>
-        </div>
     </section>
 
-    <!-- 第  4  資訊區 ------------------------------------------------------------  Introduction 車種介紹   -->
+    <!-- 第  4  資訊區 -----------------------------------------  Introduction 車種介紹   -->
     <section id="section4">
         <div class="container">
             <div id="Introduction align-items-center row">
@@ -392,25 +386,25 @@
 
 
             <!--摺疊 抽屜 -->
-            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <ul class="cars_tab nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#all" role="tab"
+                    <a class="cars_link nav-link active" id="pills-home-tab" data-toggle="pill" href="#all" role="tab"
                         aria-controls="pills-home" aria-selected="true">ALL</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#Mercedes-Benz" role="tab"
+                    <a class="cars_link nav-link" id="pills-profile-tab" data-toggle="pill" href="#Mercedes-Benz" role="tab"
                         aria-controls="Mercedes-Benz" aria-selected="false">∣ Mercedes-Benz ∣</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#Volkswagen" role="tab"
+                    <a class="cars_link nav-link" id="pills-contact-tab" data-toggle="pill" href="#Volkswagen" role="tab"
                         aria-controls="Volkswagen" aria-selected="false">∣ Volkswagen ∣</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#Hyundai" role="tab"
+                    <a class="cars_link nav-link" id="pills-contact-tab" data-toggle="pill" href="#Hyundai" role="tab"
                         aria-controls="Hyundai" aria-selected="false">∣ Hyundai ∣</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#Toyota" role="tab"
+                    <a class="cars_link nav-link" id="pills-contact-tab" data-toggle="pill" href="#Toyota" role="tab"
                         aria-controls="Toyota" aria-selected="false">∣ Toyota ∣</a>
                 </li>
 
@@ -2029,7 +2023,7 @@
             <!-- </div> -->
     </section>
 
-    <!-- 第  5  資訊區   parallax 範例 02------------為您完成每一段旅程！-------------------------------------->
+    <!-- 第  5  資訊區  5 parallax------------為您完成每一段旅程！---------------------------->
     <!-- 互動視窗 Modal -->
     <section id="section5">
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -2059,8 +2053,17 @@
                     <!-- 遮罩顯示 與尺寸變化隱藏 text-white -->
                     <div class="container h-100">
                         <div class="w-100 h-100 d-flex align-items-center justify-content-center">
-                            <h1 class="bg-primary  d-inline p-3">Hello,Moving &nbsp; 為您完成每一哩精彩旅程！
-                            </h1>
+                            <!-- <h1 class="bg-primary  d-inline p-3">Hello,Moving &nbsp; 為您完成每一哩精彩旅程！
+                            </h1> 
+                         <footer class="blockquote-footer">移動接駁 &nbsp;<cite title="Source Title">Moving &nbsp;</cite></footer> -->
+                       
+                        
+
+                        <blockquote class="blockquote text-center ">
+                            <h1 class="bg-primary  d-inline p-4">Hello,Moving &nbsp; 為您完成每一哩精彩旅程！</h1>
+                            <footer class="blockquote-footer text-right">移動接駁 &nbsp;<cite title="Source Title">Moving &nbsp;</cite></footer>
+                          </blockquote>
+
                         </div>
                     </div>
                 </div>
@@ -2068,7 +2071,7 @@
         </section>
     </section>
 
-    <!-- 第  6  資訊區  -------卡片------------------------------------------------   其他相關資訊    -->
+    <!-- 第  6  資訊區  -------卡片--------------------------   其他相關資訊    -->
     <!-- 元件  卡片 -->
     <section id="section6">
         <section id="cards-group" div class="cards d-flex align-items-center">
@@ -2192,18 +2195,51 @@
         </section>
     </section>
 
-    <!-- 第  7  資訊區   parallax 範例 02  --------一段旅程---------------------------   其他相關資訊    -->
+    <!-- 第  7  資訊區   7 parallax-1  --------一段旅程----   -->
     <section id="parallax-1" class="parallax-1">
         <div class="mask d-none d-lg-block">
             <!-- 遮罩顯示 與尺寸變化隱藏 -->
-            <div class="container h-100">
-                <div class="w-100 h-100 d-flex align-items-center justify-content-center">
-                    <h1 class="bg-primary text-white d-inline p-3">人生就像是一段旅程，所以沿途的風景才是最重要的 &nbsp; &nbsp;<br>——移動接駁。</h1>
+            <div class="container h-100 ">
+                <div class="parallaxB w-100 h-100 d-flex align-items-center justify-content-center">
+                    <h1 class="bg-primary text-white d-inline p-3 ">人生就像是一段旅程，所以沿途的風景才是最重要的 &nbsp; &nbsp;<br>——移動接駁。</h1>
                 </div>
             </div>
         </div>
     </section>
 
+
+
+    <!-- 第  8  資訊區   -------策略聯盟-------------------------------------  -->
+
+    <section id="secuion8">
+        <section id="imgT-1">
+            <div class="container">
+                <!-- Content here -->
+                <div class="row">
+                    <div class=" col-lg col-lg-6 ">
+                        <!-- 電腦版991px 以上lg時的版面 左圖右文 圖可換圖 由小寫大-->
+                        <!-- <picture> -->
+                        <img class="abc w-100"
+                            src="https://img3.secretchina.com/pic/2019/12-27/p2590882a501012458-ss.jpg"
+                            class="card-img-top" alt="...">
+                        <!-- </picture> -->
+                    </div>
+
+                    <!-- 右文字區 -->
+                    <div class="col-12 col-lg-6 order-1 order-1g-0">
+                        <div class="tex">
+                            <h2>策略聯盟</h2>
+                            <p>運用您的資源，<br>結合我們的資源，<br>共創雙贏吧!<br></p>
+                            <p>歡迎異業合作，共同串接曝光資源。</p>
+                            <h2>豐富合作經驗<br>
+                                合作快速又順利</h2>
+                            <p>任何合作機會，歡迎來電<br>洽詢0800-000-888</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
     <!-- 第  8  資訊區   ----------車行加盟-------------------------------------  -->
     <section id="secuion8">
         <div id="imgT">
@@ -2250,71 +2286,43 @@
         </div>
     </section>
 
-    <!-- 第  9  資訊區   -------策略聯盟-------------------------------------  -->
-
-    <section id="secuion9">
-        <section id="imgT-1">
-            <div class="container">
-                <!-- Content here -->
-                <div class="row">
-                    <div class=" col-lg col-lg-6 ">
-                        <!-- 電腦版991px 以上lg時的版面 左圖右文 圖可換圖 由小寫大-->
-                        <!-- <picture> -->
-                        <img class="abc w-100"
-                            src="https://img3.secretchina.com/pic/2019/12-27/p2590882a501012458-ss.jpg"
-                            class="card-img-top" alt="...">
-                        <!-- </picture> -->
-                    </div>
-
-                    <!-- 右文字區 -->
-                    <div class="col-12 col-lg-6 order-1 order-1g-0">
-                        <div class="tex">
-                            <h2>策略聯盟</h2>
-                            <p>運用您的資源，<br>結合我們的資源，<br>共創雙贏吧!<br></p>
-                            <p>歡迎異業合作，共同串接曝光資源。</p>
-                            <h2>豐富合作經驗<br>
-                                合作快速又順利</h2>
-                            <p>任何合作機會，歡迎來電<br>洽詢0800-000-888</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
 
     <!--第  10  資訊區    -->
     <section id="section10">
         <div class="container">
-            <div class="row no-gutters">
+            <div class="row">
                 <div class="col-sm-3">
                     <div class="card">
-                        One of three columns
+                        1.乘客須知 /
                     </div>
                     <div class="clear"></div>
                 </div>
                 <div class="col-sm">
                     <div class="card" data-toggle="modal" data-target="#exampleModal">
-                        乘客須知 
+                        預約流程
                     </div>
                     <div class="clear"></div>
                 </div>
 
-               
+
             </div>
         </div>
         <!--edcontent end-->
-        <!-- <style type="text/css">
-                                                    .likebox-wrapper {
-                                                        overflow-x: hidden;
-                                                    }
 
-                                                    @media screen and (max-width: 1000px) {
-                                                        .likebox-wrapper * {
-                                                            width: 85% !important;
+        <!--
+             <style type="text/css">
+            .likebox-wrapper {
+                overflow-x: hidden;
+            }
 
-                                                        }
-                                                    }
-                                                </style> -->
+                @media screen and (max-width: 1000px) {
+                .likebox-wrapper * {
+                width: 85% !important;
+
+             }
+          }
+        </style> -->     
+
         <div style="clear:both;" id="pagecontentend"></div>
 
     </section>
@@ -2326,26 +2334,27 @@
             <div class="row no-gutters">
                 <div class="col-sm-3">
                     <div class="card">
-                        乘客須知 
+                        2.乘客須知 /
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="card" data-toggle="modal" data-target="#exampleModal">
-                        Ｑ & Ａ 問與答
+                        問與答 Ｑ & Ａ
                     </div>
                 </div>
+
                 <!-- 自動內容撐大 -->
                 <div class="col-sm-auto">
-                    <div class="card">
+                    <div class="card bg-dark text-white p-3">
                         <div data-toggle="collapse" data-target="#collapseExample">
-                        Moving 機場接送
+                        ※ Moving 機場接送 相關說明：
                         </div>
                         <div class="collapse" id="collapseExample">
                             <div class="card card-body">
                                 <section class="article-text rwd">
                                     <div class="container ">
                                         <div class="xrow">
-                                            <div class="pagecontent col-md-12 list1 menu8 " style="padding:0px 15px;"
+                                            <div class="text-dreak pagecontent col-md-12 list1 menu8 " style="padding:0px 15px;"
                                                 id="edcontent">
                                                 <!--- page start-->
                                                 <!-- search start-->
@@ -2772,7 +2781,7 @@
                                                     </p>
                                                 </div>
                                                 <div>
-                                                    <h4>&nbsp;</h4>                                                    
+                                                    <h4>&nbsp;</h4>
                                                 </div>
                                                 <div>
                                                     <h6 style="color:rgb(110, 4, 4);">貼心小提醒</h6>
@@ -2817,8 +2826,10 @@
                                                     </ul>
                                                 </div>
 
-                                                <div><p><span style="color:rgb(124, 2, 2);">※注意：確認用車後如欲取消行程或更改請於用車前一日告知。</span>
-                                                    
+                                                <div>
+                                                    <p><span
+                                                            style="color:rgb(124, 2, 2);">※注意：確認用車後如欲取消行程或更改請於用車前一日告知。</span>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -2833,26 +2844,27 @@
 
                 <!-- 自動內容撐大 -->
                 <div class="col-sm-auto">
-                    <div class="card">
+                    <div class="card bg-dark text-white p-3">
                         <div data-toggle="collapse" data-target="#collapseExample">
-                        Moving 包車接送
+                        ※ Moving 包車接送 相關說明：
                         </div>
                         <div class="collapse" id="collapseExample">
                             <div class="card card-body">
                                 <section class="article-text rwd">
                                     <div class="container ">
                                         <div class="xrow">
-                                            <div class="pagecontent col-md-12 list1 menu8 " style="padding:0px 15px;" id="edcontent">
+                                            <div class="pagecontent col-md-12 list1 menu8 " style="padding:0px 15px;"
+                                                id="edcontent">
                                                 <!--- page start-->
                                                 <!-- search start-->
                                                 <!-- search end-->
                                                 <!--edcontent start-->
-                                                <h5><img src="./imgs/s-3route/首頁包車旅遊travel-pickup.png">
+                                                <h5><img class="w-100" src="./imgs/s-3route/首頁包車旅遊travel-pickup.png">
                                                     【適合任何團體出遊、外賓接待、商務行程、環島行程】
                                                 </h5>
                                                 <p>&nbsp;</p>
 
-                                               
+
                                             </div>
                                             <div class="_bd_row _bd_clearfix">
                                                 <h4>包車接送價格表</h4>
@@ -2990,7 +3002,7 @@
                                                     &nbsp;</p>
 
                                                 <ul>
-                                                    <li>價格詢問請直接電洽，或用通訊軟體詢問：</li>
+                                                    <li>價格詢問請直接電洽，或用通訊軟體詢問</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -3000,13 +3012,14 @@
                     </div>
 
                 </div>
+                <div class="clear"></div>
             </div>
         </div>
     </section>
 
     <!-- 第 footer  資訊區   <p>&nbsp;</p>-->
-    <section id="footer">
-        <div class="footer container-fluid">
+    <section class="footer" id="footer">
+        <div class="container">
             <div class="row">
                 <ul class="F-menu">
                     <!-- <li><span class="mainFooter">會員中心</span>
@@ -3016,7 +3029,7 @@
                         <li><a href="">忘記密碼</a></li>
                     </ul>
                      </li> -->
-                      
+
                     <li><span class="mainFooter">關於我們</span>
                         <ul>
                             <li><a href="#section6">乘客須知</a></li>
@@ -3040,12 +3053,27 @@
 
                     <ul class="contactList">
                         <span class="mainFooter">與我們聯絡</span>
-                        <li><span class="icon-airline">Line ID：ronway.yang<a href="http://line.naver.jp/ti/p/~0955102703" target="_blank">+886955102703</a></span></li>
-                        <li><span class="icon-airwechat">Wechat ID：<a target="_blank">+886955102703</a></span></li>
-                        <li><span class="icon-airig">instagram ID：<a href="https://www.instagram.com/ronwayyang/" target="_blank">+886955102703</a></span></li>
-                        <li><span class="icon-airFB">facebook ID：<a href=" https://www.facebook.com/ronway.yang" target="_blank">+886955102703</a></span></li>
-                       
-                        <li><span class="icon-mail"><a href="mailto:yang.ronway@gmail.com">yang.ronway@gmail.com</a></span>
+                        <li>
+                            <span class="icon-line">Line ID：ronway.yang
+                                <a href="http://line.naver.jp/ti/p/~0955102703" target="_blank">+886955102703
+                                </a></span></li>
+                        <li>
+                            <span class="icon-airwechat">Wechat ID：
+                                <a target="_blank">+886955102703</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="icon-airig">instagram ID：
+                                <a href="https://www.instagram.com/ronwayyang/"
+                                    target="_blank">+886955102703
+                                </a>
+                            </span>
+                        </li>
+                        <li><span class="icon-airFB">facebook ID：<a href=" https://www.facebook.com/ronway.yang"
+                                    target="_blank">+886955102703</a></span></li>
+
+                        <li><span class="icon-mail"><a
+                                    href="mailto:yang.ronway@gmail.com">yang.ronway@gmail.com</a></span>
                         </li>
                         <li><span class="icon-phone">24小時客服專線：<a href="tel:0955-102-703">0955-102-703</a></span></li>
                     </ul>
