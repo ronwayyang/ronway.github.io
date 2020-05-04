@@ -187,6 +187,7 @@ background:#CF9C51;
     font-weight: lighter;
     /* margin: 20px 0; */
 }
+
 .f48c {
     font-family: 微軟雅黑, 微軟正黑體;
     text-align: left;
@@ -248,7 +249,6 @@ background:#CF9C51;
     float: left;
 }
 
-
 #imgRt{
     float: left;
     clear: right;
@@ -272,8 +272,7 @@ background:#CF9C51;
 /* section3 Service 服務項目  */
 #section3{
     padding:100px 0px;
-    background: #323333;
-    
+    background: #323333;    
 } 
 
 #Service{    
@@ -282,6 +281,7 @@ background:#CF9C51;
     
     /* background-color: #323333; */
 }
+
 #ServiceTitle h1.EN {
     font-family: 微軟雅黑, 微軟正黑體;
     text-align: center;
@@ -309,14 +309,14 @@ background:#CF9C51;
     /* 設定文字背景圖  */
 }
 
-/* section3 */
 #ServiceTitle{
     width: 100%;
 }
+
 #ServiceTex{    
-    padding:10px 0 50px 0;
-   
+    padding:10px 0 50px 0;   
 }
+
 #ServiceTex .card{
     width: 230px;
     /* border: rgba(15, 25, 46, 0.164); */
@@ -328,12 +328,13 @@ background:#CF9C51;
     /* border: currentColor; */
     background-color: transparent;
     /* background-color:#797B7C; */
-    margin:auto 20px;
-    
+    margin:auto 20px;    
 }
+
 #ServiceTex h2{
     font-size: 36px;
 }
+
 #ServiceTex .text-muted{
     /* color: #6c757d!important */
     color: #fff !important ;
@@ -343,26 +344,36 @@ background:#CF9C51;
 #ServiceTex .card-body{
     color:#797B7C;
 }
-
-/* @media (max-width: 576px){
+/* 
+@media (max-width: 576px){
     .bennerTOP img {
         width: 100%;
         height: unset;
         /* font-size: 12px; */
-    }
-} */
+
+     /* }  */
+/* } */
 
 
 
-/* #section4  Introduction 車種介紹  */
 
-#Introduction h1.EN {
+/* #section4  車種介紹  */
+
+#section4{
+    padding:100px 0px;
+}
+
+#Introduction{
+    max-width: 1120px;
+    width: 100%;
+}
+#IntroductionTitle h1.EN {
     font-family: 微軟雅黑, 微軟正黑體;
     text-align: center;
-    font-size: 72px;
+    font-size: 70px;
     font-weight: bold;
     color: #C6A758;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     /* 設定文字間距 */
     text-decoration: underline;
     margin: 75px 0px 0px 0px;
@@ -372,6 +383,7 @@ background:#CF9C51;
     color: #fff;
     background-color: #b4b3b3;
 }
+
 #pills-tab a.nav-link:hover {
     color: #ffffff;
     background-color:#b4b3b3;
@@ -382,7 +394,8 @@ background:#CF9C51;
     background-color:red;
 }
 
-/* 第  5 資訊區  為您完成每一哩精彩旅程！  */
+/* 第  5 資訊區  為您完成 */
+
 .parallax {
     width: 100%;
     /* max-height: 100vh; */
@@ -390,20 +403,17 @@ background:#CF9C51;
     /* background-image: url('../imgs/S4/more0501.png'); */
         background-image: url('https://www.omaker.com.tw/wp-content/uploads/2019/01/German-Car-Guide-Gear-Patrol-LEad-1440-1024x462.jpg');
     /* background-image: url('https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2018/11/18/99/5550381.jpg&s=Y&x=0&y=0&sw=1200&sh=750&sl=W&fw=1050'); */
+
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-#parallax .bg-primary {
-    background-color: #00000098!important;
-    /* background-color:#ffffff2e!important; */
+#parallax .parallax_bg {
+    background-color: #00000063;    
     text-align: center;
     line-height: 55px;
-    border-radius: .5rem;
-    /* color:#C6A758; */
-    /* color: #CF9C51; */
-    /* color: rgb(87, 87, 87); */
+    border-radius: .5rem;   
     color: rgba(255, 255, 255, 0.678);
     
 }
@@ -431,10 +441,12 @@ background:#CF9C51;
     background-attachment: fixed;
 }
 
-#parallax-1 .bg-primary {
-    /* background-color: #007bff!important; */
-    /* color: #d62d3d; */
-    background-color: #c6a75847!important;
+#parallax-1 .parallax_bg {      
+    text-align: center;
+    line-height: 55px;
+    border-radius: .5rem;
+    color: rgba(255, 255, 255, 0.678);
+    background-color: #c6a75847
     box-shadow: 0 0 19px black;
     text-align: end;
     text-rendering: initial;
